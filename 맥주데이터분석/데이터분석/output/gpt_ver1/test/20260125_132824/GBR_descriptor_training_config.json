@@ -1,0 +1,39 @@
+{
+  "SPLIT_SEED": 0,
+  "CV_FOLDS": 5,
+  "DESCRIPTORS_RAN": [
+    "A_malt_all",
+    "A_malt_grain",
+    "A_malt_bread",
+    "A_malt_cara",
+    "A_malt_burn",
+    "A_hops_all",
+    "A_hops_citrus",
+    "A_hops_tropical",
+    "A_hops_noble",
+    "A_hops_woody"
+  ],
+  "loss_candidates": [
+    "squared_error",
+    "absolute_error"
+  ],
+  "param_grid_gbr": {
+    "subsample": [
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ],
+    "learning_rate": [
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1,
+      0.12000000000000001,
+      0.13999999999999999,
+      0.16,
+      0.18
+    ],
+    "max_depth": [
+      
