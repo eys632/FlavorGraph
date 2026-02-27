@@ -1,0 +1,2 @@
+﻿fold,splitter,n_fold_train,n_fold_val,n_outer_test,p,k_keep,standardize_before_pca,eig_tol,fold_train_recon_rmse,fold_train_recon_r2_flat,fold_val_recon_rmse,fold_val_recon_r2_flat,outer_test_recon_rmse,outer_test_recon_r2_flat,fold_val_max_abs_err,outer_test_max_abs_err
+8,KFold,158,17,75,231,157,True,1e-12,1.3836685071030908e-13,1.0,12.19652487870996,-9.971496356666727,588.6761097411018,-35.62250392633209,336.5517305354625,75557.73084865567

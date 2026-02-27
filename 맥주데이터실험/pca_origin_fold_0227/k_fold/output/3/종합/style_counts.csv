@@ -1,0 +1,23 @@
+﻿tasting_category_fine,fold_train,fold_val,outer_test
+Blond,22,0,9
+Tripel,16,4,8
+Hoppy,11,1,5
+Strong ale,11,2,5
+Lambic,8,0,3
+Brown,8,0,4
+Stout/Porter,8,1,4
+Pils/Lager,7,1,3
+Amber,7,1,4
+Kriek,7,0,3
+Wheat,7,1,4
+Dubbel,6,1,3
+Christmas,6,0,3
+Fruitbeer,6,0,2
+Saison,5,2,3
+Low/No alcohol,5,1,2
+Brett/cofermented,4,0,2
+West Flanders ale,3,2,2
+Brut,3,0,1
+Scotch,3,0,2
+Flanders old brown,2,1,2
+Faro,2,0,1

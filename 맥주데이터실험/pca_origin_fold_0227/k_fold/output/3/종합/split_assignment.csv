@@ -1,0 +1,251 @@
+﻿beer,beer_id,tasting_category_fine,part,fold
+233,5413023000264,Scotch,fold_train,3
+123,5425026960018,Stout/Porter,fold_train,3
+168,5410263060034,Scotch,fold_train,3
+187,5425017240075,Dubbel,fold_train,3
+12,5410228141587,Lambic,fold_train,3
+89,5412983140027,Brown,fold_train,3
+13,5410228196600,Christmas,fold_train,3
+93,5425006700139,Tripel,fold_train,3
+241,608782666133,Kriek,fold_train,3
+53,5411681037004,Brown,fold_train,3
+162,5425018070015,Lambic,fold_train,3
+219,5411681401775,Hoppy,fold_train,3
+60,5425029020078,Christmas,fold_train,3
+65,5411283000017,Hoppy,fold_train,3
+177,5425100322608,Fruitbeer,fold_train,3
+226,5412186000715,Strong ale,fold_train,3
+75,5412783052018,Lambic,fold_train,3
+181,5412896532032,Christmas,fold_train,3
+209,54085107,Pils/Lager,fold_train,3
+239,54055049,Tripel,fold_train,3
+182,5425028290311,Stout/Porter,fold_train,3
+142,54112087,Wheat,fold_train,3
+104,5412858000081,Strong ale,fold_train,3
+199,5411858000145,Tripel,fold_train,3
+227,5411223030098,Fruitbeer,fold_train,3
+185,54055001,Pils/Lager,fold_train,3
+245,5412186000098,Tripel,fold_train,3
+56,5413963600012,Saison,fold_train,3
+40,5410228141181,Low/No alcohol,fold_train,3
+84,5411516000517,West Flanders ale,fold_train,3
+78,5425006240017,Brown,fold_train,3
+11,8718754310017,Amber,fold_train,3
+32,54050051,Amber,fold_train,3
+234,5425029490024,Blond,fold_train,3
+106,5413977000044,Christmas,fold_train,3
+124,5412186002658,Pils/Lager,fold_train,3
+191,5411098700010,Tripel,fold_train,3
+190,875213000068,Flanders old brown,fold_train,3
+100,875213000082,Dubbel,fold_train,3
+204,5425006240024,Tripel,fold_train,3
+73,5410769100081,Blond,fold_train,3
+149,5425031010012,Blond,fold_train,3
+218,54057142,Pils/Lager,fold_train,3
+151,5411516001491,Faro,fold_train,3
+62,5410228134879,Blond,fold_train,3
+141,5410228141174,Low/No alcohol,fold_train,3
+76,5412583240837,Blond,fold_train,3
+111,5411276100540,Dubbel,fold_train,3
+82,5411516002269,Kriek,fold_train,3
+128,5425014681017,Amber,fold_train,3
+80,5415152000313,Hoppy,fold_train,3
+27,5425036850019,Hoppy,fold_train,3
+57,5410228141921,Tripel,fold_train,3
+51,5411081000523,Strong ale,fold_train,3
+229,62067029172,Wheat,fold_train,3
+137,54057012,Amber,fold_train,3
+119,5411831000742,Pils/Lager,fold_train,3
+5,5400000000006,Blond,fold_train,3
+131,5410769200088,Scotch,fold_train,3
+96,5411681080000,Pils/Lager,fold_train,3
+71,5410228218791,Blond,fold_train,3
+1,5413970150111,Brut,fold_train,3
+133,5412896000081,Strong ale,fold_train,3
+86,5410783031019,Low/No alcohol,fold_train,3
+165,5411081000363,Fruitbeer,fold_train,3
+107,5412343152332,Dubbel,fold_train,3
+220,5412783053015,Kriek,fold_train,3
+215,5413963100017,Blond,fold_train,3
+4,54079021,Strong ale,fold_train,3
+55,5425023990698,Hoppy,fold_train,3
+127,54138278,Blond,fold_train,3
+222,5425029490055,Brett/cofermented,fold_train,3
+35,8711406995075,Blond,fold_train,3
+208,54079052,Wheat,fold_train,3
+45,5412343201337,Tripel,fold_train,3
+212,5425006700054,Stout/Porter,fold_train,3
+164,5425007658828,Blond,fold_train,3
+154,5425029490017,Tripel,fold_train,3
+101,5425036450004,Blond,fold_train,3
+33,5425005660465,Fruitbeer,fold_train,3
+217,5425006241687,Tripel,fold_train,3
+74,5412783054012,Faro,fold_train,3
+138,5411223010557,Kriek,fold_train,3
+246,5410783001432,Blond,fold_train,3
+15,54079045,Tripel,fold_train,3
+18,1882,Lambic,fold_train,3
+46,5411276200325,Blond,fold_train,3
+147,5412107000466,Tripel,fold_train,3
+173,5425005660809,Stout/Porter,fold_train,3
+200,54125001,West Flanders ale,fold_train,3
+214,5425006240147,Christmas,fold_train,3
+54,549619093094,Kriek,fold_train,3
+192,5410693100324,Brut,fold_train,3
+144,5411516002306,Lambic,fold_train,3
+87,5412896001507,Stout/Porter,fold_train,3
+39,5430000193009,Hoppy,fold_train,3
+120,850413005204,Hoppy,fold_train,3
+201,741360987296,Stout/Porter,fold_train,3
+77,8711406023563,Blond,fold_train,3
+79,5425029020054,Hoppy,fold_train,3
+183,5410702000805,Saison,fold_train,3
+17,5425014687019,Tripel,fold_train,3
+170,5411663002716,Strong ale,fold_train,3
+207,5411223030036,Fruitbeer,fold_train,3
+34,5411681038001,Tripel,fold_train,3
+238,5412896000432,Blond,fold_train,3
+223,5410228231325,Low/No alcohol,fold_train,3
+72,54121096,Hoppy,fold_train,3
+6,8711406031766,Amber,fold_train,3
+24,5411656050212,Kriek,fold_train,3
+116,5411656051097,Lambic,fold_train,3
+136,54085176,Blond,fold_train,3
+3,54055308,Blond,fold_train,3
+7,5425025910809,Saison,fold_train,3
+150,5425024150275,Brett/cofermented,fold_train,3
+58,5425024151210,Saison,fold_train,3
+178,620670293948,West Flanders ale,fold_train,3
+28,5425036580008,Pils/Lager,fold_train,3
+172,5411681400310,Wheat,fold_train,3
+248,5410263015669,Blond,fold_train,3
+69,5411081000332,Tripel,fold_train,3
+145,5415152000450,Saison,fold_train,3
+115,5411516001453,Lambic,fold_train,3
+188,8711406017487,Stout/Porter,fold_train,3
+44,5411633250055,Wheat,fold_train,3
+37,5410908000036,Strong ale,fold_train,3
+196,5411551300818,Strong ale,fold_train,3
+169,5411676710004,Hoppy,fold_train,3
+67,5425026610197,Stout/Porter,fold_train,3
+158,54107014,Amber,fold_train,3
+129,5410228146162,Brown,fold_train,3
+203,5425017241164,Brett/cofermented,fold_train,3
+21,5412783052247,Lambic,fold_train,3
+206,54085015,Brown,fold_train,3
+130,5425025910410,Brut,fold_train,3
+155,5410228188704,Low/No alcohol,fold_train,3
+153,5425007810806,Kriek,fold_train,3
+161,5411686700057,Flanders old brown,fold_train,3
+197,5412896000111,Wheat,fold_train,3
+225,5411663002600,Strong ale,fold_train,3
+30,5430000043014,Blond,fold_train,3
+122,5425029020191,Brett/cofermented,fold_train,3
+126,54085060,Amber,fold_train,3
+38,541286000975,Christmas,fold_train,3
+148,5400000000012,Strong ale,fold_train,3
+195,8711406995631,Wheat,fold_train,3
+36,5412896000074,Brown,fold_train,3
+8,5425006241304,Hoppy,fold_train,3
+235,5412858000104,Strong ale,fold_train,3
+98,54055315,Brown,fold_train,3
+108,5425007658880,Brown,fold_train,3
+247,5411081000264,Fruitbeer,fold_train,3
+110,5411098730291,Blond,fold_train,3
+174,5412583240356,Dubbel,fold_train,3
+198,54079007,Dubbel,fold_train,3
+85,54112018,Tripel,fold_train,3
+249,9120041150784,Blond,fold_train,3
+163,5425017240457,Tripel,fold_val,3
+99,5413970140396,Strong ale,fold_val,3
+179,5411081004736,Flanders old brown,fold_val,3
+92,9120041150685,Amber,fold_val,3
+31,5411681401164,Hoppy,fold_val,3
+16,5411098700003,Dubbel,fold_val,3
+10,5410228202929,Low/No alcohol,fold_val,3
+118,5411364151119,West Flanders ale,fold_val,3
+52,8715951011112,Stout/Porter,fold_val,3
+244,5413784109060,West Flanders ale,fold_val,3
+20,5425005660205,Saison,fold_val,3
+23,5411681014005,Tripel,fold_val,3
+152,5410702001307,Wheat,fold_val,3
+132,5410702000379,Saison,fold_val,3
+171,5425033240028,Tripel,fold_val,3
+186,112161945,Strong ale,fold_val,3
+139,5410228142027,Pils/Lager,fold_val,3
+157,5425024150107,Tripel,fold_val,3
+250,5411223030067,Faro,outer_test,3
+9,5411081005368,Hoppy,outer_test,3
+228,5411663002945,Tripel,outer_test,3
+14,54040014,Brett/cofermented,outer_test,3
+180,5411633330047,Christmas,outer_test,3
+42,5411024000047,Lambic,outer_test,3
+114,5410769300085,Hoppy,outer_test,3
+70,54085190,Blond,outer_test,3
+243,5412138802510,Wheat,outer_test,3
+88,5411081003654,Kriek,outer_test,3
+193,5411098700034,Blond,outer_test,3
+117,9120041150678,Strong ale,outer_test,3
+160,54055438,Wheat,outer_test,3
+236,54107052,Brett/cofermented,outer_test,3
+134,54004238,Strong ale,outer_test,3
+66,5413977000037,Tripel,outer_test,3
+41,5411656010315,Lambic,outer_test,3
+68,9999999999,Tripel,outer_test,3
+47,5412583240363,Tripel,outer_test,3
+113,5425006700016,Blond,outer_test,3
+83,54055520,Low/No alcohol,outer_test,3
+43,5041300503,Amber,outer_test,3
+156,5410228193371,Kriek,outer_test,3
+90,54017016,Pils/Lager,outer_test,3
+109,5412858000067,Brown,outer_test,3
+64,5410908000128,Blond,outer_test,3
+242,5412138333311,Saison,outer_test,3
+230,5410228141235,Pils/Lager,outer_test,3
+112,5410908000012,Brown,outer_test,3
+143,5410228225928,Hoppy,outer_test,3
+159,5411686700668,Flanders old brown,outer_test,3
+146,54004009,Scotch,outer_test,3
+125,5413963300011,Blond,outer_test,3
+202,5425029020047,Stout/Porter,outer_test,3
+213,5410783004099,Hoppy,outer_test,3
+240,5410783004594,Tripel,outer_test,3
+189,5410228145912,Tripel,outer_test,3
+59,5425005660601,Blond,outer_test,3
+224,5410228141884,Wheat,outer_test,3
+176,5411858000183,West Flanders ale,outer_test,3
+29,5410702000331,Saison,outer_test,3
+81,8715608222557,Pils/Lager,outer_test,3
+19,5425030060032,Amber,outer_test,3
+2,5410228142003,Low/No alcohol,outer_test,3
+63,701197206052,Amber,outer_test,3
+135,5410908000029,Tripel,outer_test,3
+237,5400000000008,Brown,outer_test,3
+232,5411686700637,Kriek,outer_test,3
+205,793573165763,Brut,outer_test,3
+210,5413982001005,Amber,outer_test,3
+94,5412186003013,Blond,outer_test,3
+26,54125032,West Flanders ale,outer_test,3
+211,5411223030050,Lambic,outer_test,3
+121,5414239000093,Blond,outer_test,3
+140,54050082,Tripel,outer_test,3
+95,5412138303314,Christmas,outer_test,3
+91,8711406995495,Strong ale,outer_test,3
+61,5410702001314,Stout/Porter,outer_test,3
+103,5425024150108,Stout/Porter,outer_test,3
+216,5410228201076,Scotch,outer_test,3
+97,5411676700005,Hoppy,outer_test,3
+184,5412783055019,Fruitbeer,outer_test,3
+167,5411858000077,Flanders old brown,outer_test,3
+22,5411663001276,Wheat,outer_test,3
+175,5410263013665,Strong ale,outer_test,3
+102,5411911001768,Christmas,outer_test,3
+194,5411098730307,Dubbel,outer_test,3
+231,5425025390090,Stout/Porter,outer_test,3
+50,5411223030043,Fruitbeer,outer_test,3
+166,5425029020252,Saison,outer_test,3
+49,5410228208358,Blond,outer_test,3
+48,8711406995211,Dubbel,outer_test,3
+221,5412896000067,Dubbel,outer_test,3
+105,5425006700405,Strong ale,outer_test,3
+25,54079014,Brown,outer_test,3
