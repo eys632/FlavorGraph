@@ -1,0 +1,6 @@
+Target: clove (index 42)
+Best k (selection=CV_RMSE): 1
+Cum EVR(%): 14.323116
+CV   : RMSE=0.517049 (std 0.345430), R2=0.019693
+Train: RMSE=0.600052, R2=0.024309, ACC(corr)=0.155914
+Test : RMSE=0.431807, R2=-0.049199, ACC(corr)=-0.007847

@@ -1,0 +1,6 @@
+Target: F_malt_all (index 16)
+Best k (selection=CV_RMSE): 24
+Cum EVR(%): 67.993120
+CV   : RMSE=0.556415 (std 0.072700), R2=0.277235
+Train: RMSE=0.433615, R2=0.571263, ACC(corr)=0.755820
+Test : RMSE=0.885366, R2=-0.452473, ACC(corr)=0.418213

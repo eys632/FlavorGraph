@@ -1,0 +1,6 @@
+Target: acetic (index 44)
+Best k (selection=CV_RMSE): 13
+Cum EVR(%): 55.382343
+CV   : RMSE=0.464766 (std 0.132863), R2=0.452354
+Train: RMSE=0.430778, R2=0.645510, ACC(corr)=0.803436
+Test : RMSE=2.629250, R2=-9.943234, ACC(corr)=0.088487

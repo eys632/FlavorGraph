@@ -1,0 +1,6 @@
+Target: F_esters_all (index 26)
+Best PC (full index): 4 | (kept index): 4
+EVR(%): 4.877512
+Train: RMSE=0.583836, R2=0.015313, ACC(corr)=0.123746
+Test : RMSE=0.540327, R2=0.087604, ACC(corr)=0.362203
+Model: y = 0.021690 * z + 0.086303

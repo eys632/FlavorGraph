@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "n_total": 250,
+  "n_train": 175,
+  "n_test": 75,
+  "n_features": 231,
+  "max_pc_all": 231,
+  "max_pc_train": 174,
+  "xlsx_path": "/home/a202192020/맥주데이터실험/data/Supplemental Files and Figure source files.xlsx"
+}

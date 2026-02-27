@@ -1,0 +1,6 @@
+Target: sweetness (index 33)
+Best k (selection=CV_RMSE): 14
+Cum EVR(%): 56.811583
+CV   : RMSE=0.632634 (std 0.057192), R2=0.115238
+Train: RMSE=0.569590, R2=0.319456, ACC(corr)=0.565204
+Test : RMSE=0.535050, R2=0.326100, ACC(corr)=0.586219

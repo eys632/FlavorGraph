@@ -1,0 +1,2 @@
+n_train,n_test,p,k_keep,standardize_before_pca,eig_tol,train_recon_rmse,train_recon_mae,train_recon_max_abs_err,test_recon_rmse,test_recon_mae,test_recon_max_abs_err
+175,75,231,174,True,1e-12,1.6404119125200864e-13,1.6279408038151718e-14,6.821210263296962e-12,544.6602640737248,7.864325974202098,65539.86892934178

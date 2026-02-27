@@ -1,0 +1,6 @@
+Target: orange (index 40)
+Best k (selection=CV_RMSE): 9
+Cum EVR(%): 48.256443
+CV   : RMSE=0.635259 (std 0.186834), R2=-0.949248
+Train: RMSE=0.590725, R2=0.314897, ACC(corr)=0.561157
+Test : RMSE=0.761576, R2=-0.603186, ACC(corr)=0.303187

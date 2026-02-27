@@ -1,0 +1,6 @@
+Target: A_esters_isoaa (index 13)
+Best PC (full index): 4 | (kept index): 4
+EVR(%): 4.877512
+Train: RMSE=0.532580, R2=0.015727, ACC(corr)=0.125407
+Test : RMSE=0.523250, R2=0.054979, ACC(corr)=0.277577
+Model: y = 0.020056 * z + 0.061299

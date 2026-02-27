@@ -1,0 +1,6 @@
+Target: stale_hops (index 38)
+Best PC (full index): 22 | (kept index): 22
+EVR(%): 1.001884
+Train: RMSE=0.430381, R2=0.000727, ACC(corr)=0.026962
+Test : RMSE=0.460642, R2=0.008858, ACC(corr)=0.113080
+Model: y = 0.007630 * z + -0.039671

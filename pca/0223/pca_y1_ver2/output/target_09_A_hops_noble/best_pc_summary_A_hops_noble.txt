@@ -1,0 +1,6 @@
+Target: A_hops_noble (index 9)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.477960, R2=0.179352, ACC(corr)=0.423500
+Test : RMSE=0.495621, R2=0.165287, ACC(corr)=0.469503
+Model: y = 0.051417 * z + 0.037666

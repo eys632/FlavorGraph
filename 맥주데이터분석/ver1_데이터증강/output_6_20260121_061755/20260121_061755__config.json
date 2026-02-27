@@ -1,0 +1,17 @@
+{
+  "RUN_ID": "20260121_061755",
+  "MODE": "minmax_only",
+  "AUG_SYN_MULTIPLIER": 2,
+  "REPEATS": 3,
+  "RANDOM_SEEDS": [
+    0,
+    1,
+    2
+  ],
+  "VAE_MAX_EPOCHS": 2000,
+  "VAE_PATIENCE": 250,
+  "TABDDPM_MAX_EPOCHS": 5000,
+  "TABDDPM_PATIENCE": 600,
+  "TABDDPM_TIMESTEPS": 200,
+  "CTGAN_EPOCHS": 300
+}

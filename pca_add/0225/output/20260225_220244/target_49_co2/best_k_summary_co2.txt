@@ -1,0 +1,6 @@
+Target: co2 (index 49)
+Best k (selection=CV_RMSE): 11
+Cum EVR(%): 52.222987
+CV   : RMSE=0.496537 (std 0.046292), R2=0.291668
+Train: RMSE=0.463453, R2=0.403537, ACC(corr)=0.635245
+Test : RMSE=2.044495, R2=-12.464279, ACC(corr)=0.149806

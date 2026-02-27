@@ -1,0 +1,251 @@
+﻿Beer_Index,Barcode,Name_English,Name_Korean,Tasting_Category_Fine,ABV,출처
+10,5.41023E+12,Hoegaarden 0.0% (0.33l can),호가든 0.0% (330ml 캔),Low/No alcohol,-1.15490196,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:legisweb/bez-e.lv; OpenFoodFacts:suggests='Hoegaarden sans alcool'(score=28.57142857142857); Status:mismatch_confirmed
+86,5.41078E+12,Palm 0.0% (alcohol-free),팜 0.0% (무알코올),Low/No alcohol,-0.978810701,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:bierothek/bierenborrels; OpenFoodFacts:suggests='Palm Na 25 CL Fles'(score=16.0); Status:mismatch_confirmed
+2,5.41023E+12,Jupiler N.A. 0.0% (alcohol-free),주필러 0.0% (무알코올),Low/No alcohol,-0.474955193,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:nevejan/alsem; OpenFoodFacts:no_record; Status:mismatch_confirmed
+83,54055520,Chimay Blue,시메이 블루,Low/No alcohol,-0.443697499,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:suggests='Maes alcoholvrij bier'(score=37.5)
+40,5.41023E+12,Piedboeuf Blond 33cl (table beer 1.5%),피드뵈프 블론드 33cl (테이블 비어 1.5%),Low/No alcohol,0.021189299,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:solucious/snuffelstore/trendyfoods; OpenFoodFacts:suggests='Piedboeuf blonde'(score=30.769230769230774); Status:mismatch_confirmed
+247,5.41108E+12,Leffe Brown,레페 브라운,Fruitbeer,0.498310554,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+48,8.71141E+12,Heineken,하이네켄,Dubbel,0.834420704,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:suggests='Dubbel Trappist 8711406995211 Starkbier'(score=12.765957446808514)
+165,5.41108E+12,Leffe Blonde,레페 블론드,Fruitbeer,0.36361198,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+124,5.41219E+12,Duvel,듀벨,Pils/Lager,0.612783857,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+207,5.41122E+12,Lindemans Apple Lambic Beer,린데만스 Apple Lambic Beer,Fruitbeer,0.51851394,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+155,5.41023E+12,Jupiler Blue Biere Blonde,쥬필러 Blue Biere 블론드,Low/No alcohol,0.564666064,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+141,5.41023E+12,Stella Artois,스텔라 아르투아,Low/No alcohol,0.60906055,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+179,5.41108E+12,Jupiler (33cl),쥬필러 (33cl),Flanders old brown,0.636487896,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+33,5.42501E+12,Westmalle Dubbel,베스트말레 두벨,Fruitbeer,0.499687083,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+50,5.41122E+12,Pecheresse,Pecheresse,Fruitbeer,0.432969291,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+227,5.41122E+12,Lindemans Cassis,린데만스 Cassis,Fruitbeer,0.534026106,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+88,5.41108E+12,Kasteel Rouge,Kasteel Rouge,Kriek,0.920645001,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+77,8.71141E+12,Grolsch Premium Lager,Grolsch Premium 라거,Blond,0.692846919,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+22,5.41166E+12,Celis White,Celis 화이트,Wheat,0.663229635,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+81,8.71561E+12,Premium pilsener,Premium pilsener,Pils/Lager,0.709269961,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+202,5.42503E+12,Stouterik,Stouterik,Stout/Porter,0.709269961,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+64,5.41091E+12,Dorée,Dorée,Blond,0.673020907,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+218,54057142,Estaminet bière,Estaminet bière,Pils/Lager,0.729974286,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+96,5.41168E+12,Bel Pils,Bel 필스너,Pils/Lager,0.709269961,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+230,5.41023E+12,Stella Artois 25cl (5.2%),스텔라 아르투아 25cl (5.2%),Pils/Lager,0.715471539,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:mille-et-une-bieres/barcode-list; OpenFoodFacts:match(score=100.0); Status:mismatch_confirmed
+44,5.41163E+12,"Bouteille De Bière Namur Blanche 4,5°","Bouteille De Bière Namur Blanche 4,5°",Wheat,0.645913275,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+161,5.41169E+12,Omer Traditional Blond,Omer Traditional 블론드,Flanders old brown,0.712649702,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+195,8.71141E+12,Trappist,트라피스트,Wheat,0.763427994,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+142,54112087,Westmalle Tripel (Short Code),베스트말레 트리펠 (Short Code),Wheat,0.705007959,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+137,54057012,Palm,Palm,Amber,0.706717782,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+236,54107052,Wild Jo Blond 33 CL Fles,Wild Jo 블론드 33 CL Fles,Brett/cofermented,0.800029359,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+223,5.41023E+12,"Jupiler 0,0% 25 CL Fles","쥬필러 0,0% 25 CL Fles",Low/No alcohol,-1.455931956,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+211,5.41122E+12,Oud Beersel Oude Gueuze,오드 괴즈 오드 괴즈,Lambic,0.663700925,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+190,8.75213E+11,La Trappe Dubbel,라 트라페 두벨,Flanders old brown,0.705863712,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+197,5.4129E+12,Rochefort 10,로슈포르 10,Wheat,0.651278014,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+228,5.41166E+12,Vedett Extra White,베데트 Extra 화이트,Tripel,0.888460318,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+185,54055001,Orval,오르발,Pils/Lager,0.661812686,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+166,5.42503E+12,Saison du Meyboom,Saison du Meyboom,Saison,0.777064155,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+216,5.41023E+12,Jupiler 0.0 (Non-Alcoholic),쥬필러 0.0 (Non-Alcoholic),Scotch,0.854306042,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+200,54125001,Rodenbach Classic,로덴바흐 Classic,West Flanders ale,0.702430536,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+116,5.41166E+12,Mort Subite Gueuze Lambic 25 CL Fles,Mort Subite 괴즈 Lambic 25 CL Fles,Lambic,0.63447727,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+139,5.41023E+12,Jupiler Pils 25cl,주필러 필스 25cl,Pils/Lager,0.716420734,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:belgianshop/bexeb/boissons-service; OpenFoodFacts:no_record; Status:mismatch_confirmed
+183,5.4107E+12,Biere,Biere,Saison,0.768638101,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+111,5.41128E+12,Bièrre d'abbaye double,Bièrre d'abbaye 두벨,Dubbel,0.809559715,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+46,5.41128E+12,Floreffe - Blonde,Floreffe - 블론드,Blond,0.80106053,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+213,5.41078E+12,Belle-Vue Kriek,Belle-Vue 크릭,Hoppy,0.80140371,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+250,5.41122E+12,Faro Lambic,Faro Lambic,Faro,0.653212514,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+158,54107014,De Koninck Amber 25 CL Fles,De Koninck 앰버 25 CL Fles,Amber,0.693726949,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+224,5.41023E+12,Bière blanche,Bière blanche,Wheat,0.706290957,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+54,5.49619E+11,Stella Artois (Variant),스텔라 아르투아 (Variant),Kriek,0.748575617,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:recalc_check_digit(high (check-digit fix only)); OpenFoodFacts:no_record
+5,5.43E+12,Westvleteren 6 (Blonde),베스트블레테렌 6 (블론드),Blond,0.773420723,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:replace_with_published_EAN(high (multiple retailer sources)); ExternalEANMatch:sklepimpuls/drankgigant; OpenFoodFacts:no_record; Status:match_confirmed
+209,54085107,Primus 25 CL Fles,Primus 25 CL Fles,Pils/Lager,0.70457945,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+58,5.42502E+12,Troubadour Magma,트루바두르 Magma,Saison,0.824125834,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+11,8.71875E+12,Zunder 8 Trappist,Zunder 8 트라피스트,Amber,0.930949031,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+56,5.41396E+12,Saison de Dottignies,Saison de Dottignies,Saison,0.774881766,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+84,5.41152E+12,Bourgogne des Flandres,Bourgogne des Flandres,West Flanders ale,0.708845638,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+172,5.41168E+12,Extra white,Extra 화이트,Wheat,0.694605199,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+74,5.41278E+12,Boon Faro,분 파로,Faro,0.741151599,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+188,8.71141E+12,La Trappe Bockbier Rood 33 CL Fles,라 트라페 Bockbier Rood 33 CL Fles,Stout/Porter,0.860338007,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+20,5.42501E+12,Westmalle Extra,베스트말레 Extra,Saison,0.716003344,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+122,5.42503E+12,Delirium Tremens,데릴리움 Tremens,Brett/cofermented,0.849112166,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+169,5.41168E+12,St. Bernardus Abt 12,세인트 버나두스 Abt 12,Hoppy,0.894039001,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+194,5.4111E+12,Chimay Red (Rouge),시메이 레드 (Rouge),Dubbel,0.84416641,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+160,54055438,Brugs Bière,Brugs Bière,Wheat,0.681241237,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+43,5041300503,Grolsch Premium Lager,Grolsch Premium 라거,Amber,0.823474229,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:unresolved_nonstandard_length(low); OpenFoodFacts:no_record; Status:unresolved_barcode_or_nonbeer
+100,8.75213E+11,Dubbel bruin,두벨 브라운,Dubbel,0.774516966,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+7,5.42503E+12,La Chouffe Blond,La 슈프 블론드,Saison,0.892651034,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+62,5.41023E+12,Ginder Ale,Ginder 에일,Blond,0.747023177,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+55,5.42502E+12,Kasteel Donker,Kasteel Donker,Hoppy,0.836324116,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+26,54125032,Rodenbach Grand Cru,로덴바흐 Grand Cru,West Flanders ale,0.747023177,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+232,5.41169E+12,Kriek Brut,크릭 Brut,Kriek,0.812913357,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+151,5.41152E+12,Faro,Faro,Faro,0.599337133,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+61,5.4107E+12,Monk's Stout,Monk's Stout,Stout/Porter,0.746634199,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+156,5.41023E+12,Belgies Bier,Belgies Bier,Kriek,0.718501689,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+138,5.41122E+12,Gouden Carolus Classic,구덴 카롤루스 Classic,Kriek,0.836007459,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+70,54085190,Tongerlo Lux Blond,통겔로 Lux 블론드,Blond,0.794836458,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+113,5.42501E+12,Troubadour Blonde,트루바두르 블론드,Blond,0.857030798,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+176,5.41186E+12,Lindemans Kriek,린데만스 크릭,West Flanders ale,0.736396502,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+105,5.42501E+12,Troubadour Westkust,트루바두르 Westkust,Strong ale,0.943988875,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+167,5.41186E+12,VanderGhinste Oud Bruin,VanderGhinste Oud 브라운,Flanders old brown,0.730782276,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+59,5.42501E+12,Cerveja Belga Quintine Blond,Cerveja Belga Quintine 블론드,Blond,0.888179494,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+135,5.41091E+12,Chimay Triple,시메이 트리펠,Tripel,0.911157609,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+82,5.41152E+12,Grimbergen Blonde,그림베르겐 블론드,Kriek,0.803798408,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+241,6.08783E+11,Samuel Adams Boston Lager,Samuel Adams Boston 라거,Kriek,0.796574333,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+128,5.42501E+12,Tripel Karmeliet (Bottle),트리펠 카르멜리엣 (Bottle),Amber,0.737590166,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+244,5.41378E+12,Desperados,Desperados,West Flanders ale,0.871280973,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+178,6.2067E+11,Moosehead Lager (Canada),Moosehead 라거 (Canada),West Flanders ale,0.848804701,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+110,5.4111E+12,Affligem Blond 30 CL Fles,아플리젬 블론드 30 CL Fles,Blond,0.839478047,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+231,5.42503E+12,Gulden Draak,굴덴 드라크,Stout/Porter,0.832508913,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+112,5.41091E+12,Rouge,Rouge,Brown,0.867172751,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+219,5.41168E+12,Vedett IPA,베데트 아이피에이,Hoppy,0.743509765,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+129,5.41023E+12,Brune,Brune,Brown,0.809896247,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+42,5.41102E+12,Geuze 100% Lambic Bio,Geuze 100% Lambic Bio,Lambic,0.751663946,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+72,54121096,Orval Trappist (Short Code),오르발 트라피스트 (Short Code),Hoppy,0.981592117,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+186,22100000742,Pabst Blue Ribbon (PBR),Pabst Blue Ribbon (PBR),Strong ale,0.971739591,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:replace_with_published_UPC(medium (pack-size specific; from Target listing)); ExternalEANMatch:Target; OpenFoodFacts:no_record; Status:match_confirmed
+109,5.41286E+12,Trappiste Rochefort 6,Trappiste 로슈포르 6,Brown,0.869525063,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+246,5.41078E+12,Royale,Royale,Blond,0.902546779,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+97,5.41168E+12,hopus,hopus,Hoppy,0.92788341,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+87,5.4129E+12,Biere,Biere,Stout/Porter,0.762678564,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+220,5.41278E+12,Verse kreiken,Verse kreiken,Kriek,0.695043659,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+201,7.41361E+11,Blue Moon Belgian White,블루문 Belgian 화이트,Stout/Porter,0.850646235,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+14,54040014,Orval Trappist,오르발 트라피스트,Brett/cofermented,0.861534411,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+173,5.42501E+12,Stout Hercule (9° - 33CL. ),Stout Hercule (9° - 33CL. ),Stout/Porter,0.921166051,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+37,5.41091E+12,Chimay Blue 33cl,시메이 블루 33cl,Strong ale,0.965201701,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:beergonzo/barrel&batch; OpenFoodFacts:match(score=100.0); Status:mismatch_confirmed
+119,5.41183E+12,Bavik Super Pils,Bavik Super 필스너,Pils/Lager,0.721398376,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+177,5.4251E+12,Wilderen Kanunnik,빌데렌 Kanunnik,Fruitbeer,0.731991449,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:recalc_check_digit(high (check-digit fix only)); OpenFoodFacts:no_record
+106,5.41398E+12,Biére de Noël,Biére de Noël,Christmas,0.889301703,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+159,5.41169E+12,Goudenband,Goudenband,Flanders old brown,0.890700398,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+90,54017016,MAES PILS ~ Casier de 24x25cl.,MAES 필스너 ~ Casier de 24x25cl.,Pils/Lager,0.717670503,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+92,9.12004E+12,Benno Trappistenbier,Benno Trappistenbier,Amber,0.560504415,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+93,5.42501E+12,troubadour magma triple,troubadour magma 트리펠,Tripel,0.959994838,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+238,5.4129E+12,Het Kapittel Blonde 33cl,Het Kapittel 블론드 33cl,Blond,0.802431626,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+76,5.41258E+12,Ename Blond,Ename 블론드,Blond,0.854913022,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+107,5.41234E+12,Dubbel Trappist,두벨 트라피스트,Dubbel,0.863917377,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+205,7.93573E+11,Lagunitas IPA,Lagunitas 아이피에이,Brut,0.958324932,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+206,54085015,Tongerlo Nox Bruin,통겔로 Nox 브라운,Brown,0.870403905,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+53,5.41168E+12,Maredsous Brune,Maredsous Brune,Brown,0.903089987,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+24,5.41166E+12,Tongerlo Prior,통겔로 Prior,Kriek,0.803115555,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+136,54085176,Blonde dorée,블론드 dorée,Blond,0.930949031,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+69,5.41108E+12,Bière brigand,Bière brigand,Tripel,0.959994838,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+180,5.41163E+12,Bière,Bière,Christmas,0.88337749,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+49,5.41023E+12,Leffe blonde,레페 블론드,Blond,0.810232518,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+243,5.41214E+12,Maes Pils,Maes 필스너,Wheat,0.755112266,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+134,54004238,Gordon Finest Gold Blond 33 CL Fles,Gordon Finest Gold 블론드 33 CL Fles,Strong ale,0.982044979,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+193,5.4111E+12,Postel Blonde : Bière D'abbaye 33cl 7%,Postel 블론드 : Bière D'abbaye 33cl 7%,Blond,0.851258349,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+39,5.43E+12,Cornet Oaked,Cornet Oaked,Hoppy,0.862131379,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+240,5.41078E+12,Cornet Oaked,Cornet Oaked,Tripel,0.949633924,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+12,5.41023E+12,Gueuze Belle-vue,괴즈 Belle-vue,Lambic,0.75089392,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+150,5.42502E+12,Troubadour Blond,트루바두르 블론드,Brett/cofermented,0.912753304,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+23,5.41168E+12,Duvel,듀벨,Tripel,0.922465945,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+226,5.41219E+12,Delirium Nocturnum,데릴리움 Nocturnum,Strong ale,0.911423965,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+29,5.4107E+12,saison Dupont,saison Dupont,Saison,0.8309093,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+132,5.4107E+12,Augustijn Blond,아우구스티너 블론드,Saison,0.833147112,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+16,5.4111E+12,Postel : Bière Double Belge D'abbaye 33cl 7%,Postel : Bière 두벨 Belge D'abbaye 33cl 7%,Dubbel,0.833784375,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+47,5.41258E+12,Cristal Pils,크리스탈 필스너,Tripel,0.968015714,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+164,5.42501E+12,Achel Blond,아헬 블론드,Blond,0.903089987,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+115,5.41152E+12,Timmermans lambicus blanche,Timmermans lambicus blanche,Lambic,0.640481437,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+149,5.42503E+12,Seefbier Blond 33 CL Fles,Seefbier 블론드 33 CL Fles,Blond,0.820201459,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+80,5.41515E+12,IPA - belgisch hoppig bier,아이피에이 - belgisch hoppig bier,Hoppy,0.810904281,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+120,8.50413E+11,Trappist India Pale Ale,트라피스트 India Pale 에일,Hoppy,0.893206753,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+222,5.42503E+12,Achel 8 Bruin,아헬 8 브라운,Brett/cofermented,0.8876173,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+18,1882,Koro,Koro,Lambic,0.836640542,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:not_a_beer_item(medium); OpenFoodFacts:no_record; Status:unresolved_barcode_or_nonbeer
+98,54055315,Ciney brune,Ciney brune,Brown,0.831549852,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+221,5.4129E+12,Rochefort 6,로슈포르 6,Dubbel,0.902818468,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+32,54050051,Rodenbach Classic,로덴바흐 클래식,Amber,0.931457871,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+27,5.42504E+12,Piraat,피라트,Hoppy,0.90579588,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+13,5.41023E+12,Leffe Noël,레페 Noël,Christmas,0.810904281,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+174,5.41258E+12,Cristal Alken (Pils),크리스탈 Alken (필스너),Dubbel,0.866582677,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+79,5.42503E+12,Brusseleir Zwet Ipa Bruin 33 CL Fles,Brusseleir Zwet 아이피에이 브라운 33 CL Fles,Hoppy,0.893484346,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+118,5.41136E+12,Duchesse de Bourgogne,Duchesse de Bourgogne,West Flanders ale,0.80685803,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+152,5.4107E+12,Blanche du Hainaut Bio Bière belge 25,Blanche du Hainaut Bio Bière belge 25,Wheat,0.756636108,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+184,5.41278E+12,Palm Belge,Palm Belge,Fruitbeer,0.51851394,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+19,5.42503E+12,Pauwel Kwak,Pauwel Kwak,Amber,0.911157609,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+145,5.41515E+12,Affligem Blonde,아플리젬 블론드,Saison,0.83282813,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+125,5.41396E+12,XX Bitter,XX Bitter,Blond,0.773786445,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+6,8.71141E+12,La Trappe Isidor,라 트라페 Isidor,Amber,0.882524538,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+212,5.42501E+12,Troubadour Obscura,트루바두르 Obscura,Stout/Porter,0.905256049,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+78,5.42501E+12,GOUDEN CAROLUS CLASSIC,GOUDEN CAROLUS CLASSIC,Brown,0.943494516,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+234,5.42503E+12,Achel 8 Blond,아헬 8 블론드,Blond,0.881669908,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+147,5.41211E+12,Bouteille De Bière Satan Gold 8°,Bouteille De Bière Satan Gold 8°,Tripel,0.866582677,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+66,5.41398E+12,Triple,트리펠,Tripel,0.949390007,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+249,9.12004E+12,Nivard Trappistenbier,Nivard Trappistenbier,Blond,0.804820679,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+104,5.41286E+12,Trappistes Rochefort 8,Trappistes 로슈포르 8,Strong ale,0.941262909,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+101,5.42504E+12,Baptist Blond,Baptist 블론드,Blond,0.870403905,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+237,5.43E+12,Westvleteren 8 (Extra),베스트블레테렌 8 (Extra),Brown,0.95616843,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:replace_with_published_EAN(high (multiple retailer sources)); ExternalEANMatch:sklepimpuls/slijterijberendsen; OpenFoodFacts:no_record; Status:match_confirmed
+127,54138278,Keizer Karel Ommegang Blond 33 CL Fles,Keizer Karel Ommegang 블론드 33 CL Fles,Blond,0.923632533,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+245,5.41219E+12,Delirium tremens,데릴리움 tremens,Tripel,0.941014244,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+191,5.4111E+12,Chimay Blue (Bleu),시메이 Blue (Bleu),Tripel,0.957846634,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+60,5.42503E+12,Winter Mess,Winter Mess,Christmas,0.94767874,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+51,5.41108E+12,Bière,Bière,Strong ale,1.045714059,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+144,5.41152E+12,Grimbergen Double Ambree,그림베르겐 두벨 Ambree,Lambic,0.800029359,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+28,5.42504E+12,Piraat Triple Hop,피라트 트리펠 Hop,Pils/Lager,0.831869774,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+41,5.41166E+12,Tongerlo Blond,통겔로 블론드,Lambic,0.866287339,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+153,5.42501E+12,Houblon Chouffe,Houblon 슈프,Kriek,0.840419778,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+146,54004009,Scotch Ale,Scotch 에일,Scotch,0.915399835,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+168,5.41026E+12,Mort Subite Kriek,Mort Subite 크릭,Scotch,0.927113612,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+30,5.43E+12,Rodenbach Classic,로덴바흐 Classic,Blond,0.90982337,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+36,5.4129E+12,Rochefort 8,로슈포르 8,Brown,0.96118371,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+126,54085060,Rouge rubis,Rouge rubis,Amber,0.930439595,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+162,5.42502E+12,Trappiste quadruple,Trappiste quadruple,Lambic,0.852784869,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+123,5.42503E+12,Wolf 8 Dubbel,Wolf 8 두벨,Stout/Porter,0.938269483,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+130,5.42503E+12,Mc Chouffe,Mc 슈프,Brut,0.94225615,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+8,5.42501E+12,Gulden Draak 9000 Quad,굴덴 드라크 9000 Quad,Hoppy,0.930439595,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+31,5.41168E+12,Duvel Tripel Hop Citra,듀벨 트리펠 Hop Citra,Hoppy,0.973127854,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+52,8.71595E+12,Bavaria Premium Lager,Bavaria Premium 라거,Stout/Porter,0.910357557,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+9,5.41108E+12,Hoppy,Hoppy,Hoppy,0.849419414,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+204,5.42501E+12,Tripel,트리펠,Tripel,0.957607287,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+94,5.41219E+12,Averbode,Averbode,Blond,0.873901598,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+131,5.41077E+12,MC Chouffe dunkel,MC 슈프 dunkel,Scotch,0.910357557,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+75,5.41278E+12,Geuze Boon à l’Ancienne,Geuze 분 à l’Ancienne,Lambic,0.85672889,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+34,5.41168E+12,"Maredsous,Duvel Moortgat","Maredsous,듀벨 Moortgat",Tripel,0.989672248,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+108,5.42501E+12,Achel Bruin,아헬 브라운,Brown,0.898725182,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+187,5.42502E+12,Cerveja Belga Brugse Zot Dubbel - 330ml,Cerveja Belga Brugse Zot 두벨 - 330ml,Dubbel,0.835373452,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+45,5.41234E+12,Trappist tripel,트라피스트 트리펠,Tripel,0.952550294,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+154,5.42503E+12,Achel Extra Bruin,아헬 Extra 브라운,Tripel,0.937517892,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+121,5.41424E+12,Duvel Tripel Hop Cashmere,듀벨 트리펠 Hop Cashmere,Blond,0.791339704,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+242,5.41214E+12,Cristal Alken,크리스탈 알켄,Saison,0.829625353,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+208,54079052,Wit,위트,Wheat,0.766412847,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+38,5.41286E+11,Bavik Super Pils,Bavik Super 필스너,Christmas,1.004321374,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:recalc_check_digit(high (check-digit fix only)); OpenFoodFacts:no_record
+170,5.41166E+12,Duvel,듀벨,Strong ale,1.009663317,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+214,5.42501E+12,Gulden Draak Classic,굴덴 드라크 Classic,Christmas,0.976808337,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+35,8.71141E+12,Trappist Blonde,트라피스트 블론드,Blond,0.807196661,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+215,5.41396E+12,Guldenberg,Guldenberg,Blond,0.895146189,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+235,5.41286E+12,Trappist Rochefort 10,트라피스트 로슈포르 10,Strong ale,1.018700499,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+89,5.41298E+12,Gouden Carolus Tripel,구덴 카롤루스 트리펠,Brown,0.958802703,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+114,5.41077E+12,Chouffe,슈프,Hoppy,0.950851459,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+181,5.4129E+12,Kapittel,Kapittel,Christmas,0.934750875,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+225,5.41166E+12,Piraat,피라트,Strong ale,1.009450896,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+57,5.41023E+12,hoegarden grand cru,hoegarden grand cru,Tripel,0.932727367,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+143,5.41023E+12,Victoria Strong Blond (AB InBev),빅토리아 스트롱 블론드 (AB InBev),Hoppy,0.876506504,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+133,5.4129E+12,kapittel,kapittel,Strong ale,0.991226076,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+182,5.42503E+12,Papegaei,Papegaei,Stout/Porter,0.921166051,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+17,5.42501E+12,Arend Tripel,아렌드 트리펠,Tripel,0.945960704,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+229,62067029172,Miller Lite,밀러 Lite,Wheat,0.913283902,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:unresolved_nonstandard_length(low (cannot verify barcode online)); OpenFoodFacts:no_record; Status:unresolved_barcode_or_nonbeer
+148,5.43E+12,Westvleteren 12,베스트블레테렌 12,Strong ale,1.017033339,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:replace_with_published_EAN(high (multiple retailer sources)); ExternalEANMatch:sklepimpuls/slijterijberendsen/drankgigant; OpenFoodFacts:no_record; Status:match_confirmed
+248,5.41026E+12,Blonde,블론드,Blond,0.831869774,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+65,5.41128E+12,Delta IPA,Delta 아이피에이,Hoppy,0.839792184,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+73,5.41077E+12,33CL BIERE BLONDE CHOUFFE 8%V,33CL BIERE 블론드 CHOUFFE 8%V,Blond,0.901458321,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+198,54079007,Pater 6,Pater 6,Dubbel,0.853698212,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+91,8.71141E+12,Quadrupel,Quadrupel,Strong ale,1.006252051,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+217,5.42501E+12,lucifer,lucifer,Tripel,0.919078092,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+163,5.42502E+12,Straffe Hendrik,Straffe Hendrik,Tripel,0.966141733,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+68,9999999999,Duschgel - Iris,Duschgel - Iris,Tripel,0.940516485,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:not_a_beer_item(high); OpenFoodFacts:match(score=100.0); Status:unresolved_barcode_or_nonbeer
+15,54079045,Duvel (Short Code),듀벨 (Short Code),Tripel,0.89181612,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+1,5.41397E+12,Cara Pils (Everyday),Cara 필스너 (Everyday),Brut,0.971507782,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+71,5.41023E+12,Leffe Royale Whitbread Golding 33cl,레페 로얄 윗브래드 골딩 33cl,Blond,0.875061263,원본CSV:Final_250_Beer_Master_List_Ultimate; ExternalEANMatch:mille-et-une-bieres; OpenFoodFacts:no_record; Status:mismatch_confirmed
+102,5.41191E+12,Keizer Karel Robijn Rood,Keizer Karel Robijn Rood,Christmas,1.009450896,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+140,54050082,Tripel Karmeliet,트리펠 카르멜리엣,Tripel,0.922465945,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+67,5.42503E+12,St-Feuillien Grand Cru,St-Feuillien Grand Cru,Stout/Porter,0.903361336,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+210,5.41398E+12,Ramée Ambrée,Ramée Ambrée,Amber,0.883093359,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+189,5.41023E+12,"Leffe triple 8,5°","레페 트리펠 8,5°",Tripel,0.942504106,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+233,5.41302E+12,Satan Gold,Satan Gold,Scotch,0.903361336,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+199,5.41186E+12,Traditional Blond,Traditional 블론드,Tripel,0.937768567,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+63,7.01197E+11,Tripel,트리펠,Amber,1.004321374,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+95,5.41214E+12,St Feuillien De Noël 33cl,St Feuillien De Noël 33cl,Christmas,0.96449534,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+25,54079014,prior 8,prior 8,Brown,0.898450919,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+203,5.42502E+12,Paix Dieu (Full Moon Beer),페디외 (Full Moon Beer),Brett/cofermented,1.036628895,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:no_record
+85,54112018,Bruggs Bouteille De Biere Brugs Triple 8.7,Bruggs Bouteille De Biere Brugs 트리펠 8.7,Tripel,0.943741766,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+3,54055308,Ciney,Ciney,Blond,0.833147112,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+21,5.41278E+12,Geuze Marriage Parfait,Geuze Marriage Parfait,Lambic,0.92788341,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+192,5.41069E+12,Deus Brut des Flandres,Deus Brut des Flandres,Brut,1.05671433,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+239,54055049,Cerveza &quot;Judas&quot;,Cerveza &quot;Judas&quot;,Tripel,0.941014244,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+117,9.12004E+12,Gregorius Trappistenbier,Gregorius Trappistenbier,Strong ale,1.051345499,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+171,5.42503E+12,Bertinchamps Triple,Bertinchamps 트리펠,Tripel,0.962606073,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+103,5.42502E+12,Troubadour Westkust,트루바두르 Westkust,Stout/Porter,1.06595298,원본CSV:Final_250_Beer_Master_List_Ultimate; BarcodeFix:recalc_check_digit(high (check-digit fix only)); OpenFoodFacts:suggests='Caulier Tripel 33 CL Fles'(score=31.818181818181813)
+175,5.41026E+12,Biere d'abbaye,Biere d'abbaye,Strong ale,1.003891166,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+196,5.41155E+12,Bush Caractère,Bush Caractère,Strong ale,1.06069784,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+4,54079021,St. Bernardus Abt 12,세인트 버나두스 Abt 12,Strong ale,1.004321374,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+99,5.41397E+12,Cerveza Artesana Malheur 12 12%,Cerveza Artesana Malheur 12 12%,Strong ale,1.001517377,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)
+157,5.42502E+12,Caulier Tripel 33 CL Fles,Caulier 트리펠 33 CL Fles,Tripel,1.036628895,원본CSV:Final_250_Beer_Master_List_Ultimate; OpenFoodFacts:match(score=100.0)

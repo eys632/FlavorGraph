@@ -1,0 +1,6 @@
+Target: diacetyl (index 35)
+Best k (selection=CV_RMSE): 15
+Cum EVR(%): 58.145723
+CV   : RMSE=0.497392 (std 0.091454), R2=0.126864
+Train: RMSE=0.464271, R2=0.279410, ACC(corr)=0.528592
+Test : RMSE=0.937941, R2=-3.904010, ACC(corr)=0.033696

@@ -1,0 +1,6 @@
+Target: A_hops_tropical (index 8)
+Best PC (full index): 149 | (kept index): 149
+EVR(%): 0.020593
+Train: RMSE=0.640274, R2=0.000183, ACC(corr)=0.013513
+Test : RMSE=0.529239, R2=-0.023478, ACC(corr)=0.273401
+Model: y = 0.039673 * z + 0.042521

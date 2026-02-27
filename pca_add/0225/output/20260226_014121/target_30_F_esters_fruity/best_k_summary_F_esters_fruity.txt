@@ -1,0 +1,6 @@
+Target: F_esters_fruity (index 30)
+Best k (selection=CV_RMSE): 13
+Cum EVR(%): 55.382343
+CV   : RMSE=0.444368 (std 0.113125), R2=0.020205
+Train: RMSE=0.411843, R2=0.203367, ACC(corr)=0.450962
+Test : RMSE=0.811776, R2=-0.875833, ACC(corr)=0.351542

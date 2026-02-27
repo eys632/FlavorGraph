@@ -1,0 +1,1091 @@
+---
+title: "R_figure_generator_Supplements"
+author: "Michiel"
+date: '2023-06-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# GENERAL SETUP
+
+```{r}
+rm(list = ls())
+cat('\014')
+pc_name <- file.path('C:/users', Sys.info()[7])
+setwd(file.path(pc_name, 'Dropbox (Verstrepen.lab)', 'BeerAromas', 'submission data final', 'Supplements'))
+```
+
+# Bar plot showing the number of beers for each style
+
+```{r}
+library(tidyverse)
+```
+
+### Loading in data
+
+```{r}
+data_RB <- read.csv('Supplemental File S1.csv') %>% 
+  mutate(tasting_category_fine = factor(tasting_category_fine, levels = rev(sort(unique(tasting_category_fine)))))
+
+data_RB <- data_RB %>% 
+  select(beer, tasting_category_fine) %>% 
+  group_by(tasting_category_fine) %>% 
+  summarise(total = n()) %>% 
+  mutate(tasting_category_fine = gsub('Low/No alcohol', 'Non/low-alcohol', tasting_category_fine), 
+         tasting_category_fine = factor(tasting_category_fine, levels = rev(c('Pils/Lager',
+                                                                              'Wheat', 
+                                                                              'Saison', 
+                                                                              'Blond', 
+                                                                              'Tripel',
+                                                                              'Strong ale',
+                                                                              'Amber', 
+                                                                              'Brown', 
+                                                                              'Dubbel',
+                                                                              'Stout/Porter', 
+                                                                              'Scotch', 
+                                                                              'Christmas', 
+                                                                              'Hoppy', 
+                                                                              'Flanders old brown', 
+                                                                              'West Flanders ale',
+                                                                              'Faro', 
+                                                                              'Lambic', 
+                                                                              'Kriek', 
+                                                                              'Fruitbeer', 
+                                                                              'Brett/cofermented',
+                                                                              'Brut', 
+                                                                              'Non/low-alcohol'
+  )))) %>% 
+  mutate(label = paste(total, ' ', sep = ''))
+```
+
+### Plotting
+
+Plot settings
+
+```{r}
+{
+  fill = '#Faca13'
+  y_ax <- 'Number of beers'
+  y_angle <- 90
+  x_ax <- 'Beer style'
+  textsize = 17
+  pointsize = 1.5
+  legend_size = 0.85
+  textcolor = '#000000'
+}
+```
+
+Bar plot
+
+```{r}
+style_plot_no_whitespace <- ggplot(data_RB, aes(x = tasting_category_fine, y = total)) + 
+  geom_bar(fill = fill, stat = 'identity') + 
+  geom_text(aes(label = label), hjust = 1, fontface= 'bold', color = 'white', size = textsize/3) + 
+  theme_bw() +
+  labs(x = x_ax,
+       y = y_ax,
+       color = "Beer style") +
+  theme(axis.title.y = element_text(angle = y_angle, size = round(18*textsize/15), color = textcolor, face = 'bold'),
+        axis.title.x = element_text(size = round(18*textsize/15), color = textcolor, face = 'bold'),
+        axis.text.x = element_text(size = textsize, color = textcolor),
+        axis.text.y = element_text(size = textsize, color = textcolor),
+        axis.line = element_line(color = textcolor),
+        axis.ticks = element_line(color = textcolor),
+        plot.title = element_text(size = round(18*textsize/15)),
+        legend.title = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.text = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.key.size = unit(legend_size, 'cm'),
+        panel.grid = element_blank(),
+        strip.text = element_text(size = round(16*textsize/15), face = 'bold')) +
+  ggtitle("") + 
+  scale_y_continuous(expand = expansion(add = c(0, 1))) +
+  coord_flip()
+
+ggsave(plot = style_plot_no_whitespace,
+       filename = 'R_Beer_per_style_no_whitespace.png',
+       units = 'mm',
+       height = 200,
+       width = 250,
+       dpi = 300)
+```
+
+# Beer appreciation vs beer price
+
+Note: Because the RateBeer scores are property of RateBeer (ZX Ventures USA), only the data for the trained panel dataset is provided for this Figure.
+
+```{r}
+library(tidyverse)
+library(tidyquant)
+library(ggpmisc)
+library(svglite)
+```
+
+### Loading data
+
+```{r}
+prices <- read.csv('Beer Prices.csv')
+# data_RB <- read.csv('Submission data final/chem_dataset_complete_log_ratebeer.csv')
+data_EP <-  read.csv('Supplemental File S4.csv')
+```
+
+### Data wrangling
+
+```{r}
+
+# data_RB <- data_RB %>% 
+#   select(beer, beer_id, overall_20) %>% 
+#   rename(RateBeer = overall_20)
+
+data_EP <- data_EP %>% 
+  select(beer, beer_id, overall) %>% 
+  rename(`Trained panel` = overall)
+
+
+colruyt_delhaize <- prices %>% 
+  select(beer, beer_id, tasting_category, Price_Colruyt_Belgium, Price_Delhaize_Belgium) %>% 
+  rename(Colruyt = Price_Colruyt_Belgium,
+         Delhaize = Price_Delhaize_Belgium) %>% 
+  merge(data_EP, all = TRUE) %>% 
+  # merge(data_RB, all = TRUE) %>% 
+  pivot_longer(cols = c(Colruyt,
+                        Delhaize),
+               names_to = 'store', values_to = 'price') %>% 
+  # pivot_longer(cols = c(RateBeer, `Trained panel`), names_to = 'dataset', values_to = 'appreciation') %>% 
+  mutate(store = case_when(store == 'Colruyt' ~ 'Colruyt price ($)',
+                           store == 'Delhaize' ~ 'Delhaize price ($)',
+                           TRUE ~ store)) %>% 
+  filter(!is.na(price)) %>% 
+  mutate(dataset = "Trained panel") %>% 
+  rename(appreciation = "Trained panel")
+
+correlations <- colruyt_delhaize %>% 
+  group_by(store, dataset) %>% 
+  summarise(correlation = cor(price, appreciation, method = 'spearman'),
+            price = 8,
+            appreciation = -2,
+            n = n())
+```
+
+### Plotting
+
+```{r}
+{
+  y_ax <- 'Appreciation'
+  y_angle <- 0
+  x_ax <- 'Price'
+  viridis_code = 'C'
+  textsize = 17
+  pointsize = 1.5
+  legend_size = 0.85
+  textcolor = '#192945'
+}
+
+CD <- ggplot(colruyt_delhaize, aes(x = appreciation, y = price)) +
+  facet_grid(cols = vars(dataset),
+             rows = vars(store),
+             #scales = 'free',
+             switch = 'both') + 
+  geom_text(data = correlations,
+            aes(label = paste0("ρ = ", round(correlation, 2))),
+            size = 5,
+            color = textcolor) + 
+  geom_point(size = 2, alpha = 0.7, color = textcolor) +
+  theme_bw() +
+  labs(x = 'Appreciation score',
+       y = '') +
+  theme(axis.title.y = element_text(size = round(18*textsize/15), color = textcolor),
+        axis.title.x = element_text(size = round(18*textsize/15), color = textcolor),
+        axis.text.y = element_text(size = round(16*textsize/15), color = textcolor),
+        axis.text.x = element_text(size = round(16*textsize/15), color = textcolor),
+        axis.line = element_blank(),
+        axis.ticks = element_line(color = textcolor),
+        plot.title = element_text(size = round(18*textsize/15)),
+        legend.title = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.text = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.position = 'none',
+        legend.key.size = unit(legend_size, 'cm'),
+        panel.grid = element_blank(),
+        strip.text = element_text(size = round(16*textsize/15),
+                                  color = textcolor),
+        strip.background = element_blank(),
+        strip.placement = 'outside') +
+  ggtitle("")
+
+
+ggsave(filename = 'Appreciation_vs_price.svg',
+       plot = CD,
+       height = 165,
+       width = 150,
+       units = 'mm',
+       dpi = 300)
+```
+
+# Rugplots
+
+Note: Because the RateBeer scores are property of RateBeer (ZX Ventures USA), only the data for the trained panel dataset is provided for this Figure.
+
+Libraries
+
+```{r}
+library(tidyverse)
+library(RColorBrewer)
+library(gridExtra)
+library(ggpubr)
+```
+
+Colors
+
+```{r}
+color_yeast <- "#E86A3B"
+color_malt <- "#6BA8C9"
+color_hop <- "#ABD17D"
+color_wildflora <- "#FACA13"
+color_other <- "#5A5F62"
+palette <- c(Malt = color_malt, 
+             Hops = color_hop, 
+             Yeast = color_yeast, 
+             Spices = color_other, 
+             Others = color_other,
+             "Wild flora" = color_wildflora)
+color_beer <- "#E69F00"
+color_darkbeer <- "#68480B"
+
+print <- TRUE
+```
+
+### Gathering datasets
+
+```{r}
+chem_calibrated = read.csv('Calibrated chemical dataset.csv')
+
+sensory_data = read.csv("Supplemental File S4.csv")
+
+mapping_columnnames <- read.csv("Sensory names.csv")
+
+thresholds <- read.csv("Sensory thresholds.csv")
+```
+
+### Chemical Rugplots
+
+We create a nested dataframe that contains all the data we need for plotting.
+
+1.  Setting the compounds that we want to plot
+2.  Adding all the other required info
+3.  Creating the 'clean_name' parameter
+
+```{r}
+rugplot_data = rbind(tibble(plotgroup = 'group 1',
+                            field_name_R = c("ethyl_acetate", "ethyl_decanoate", "ethyl_hexanoate", 
+                                             "isopentyl_acetate", "phenethyl_acetate", "isobutyl_acetate",
+                                             "ethanol..v.v.", "isoamyl_alcohol",
+                                             "lactic_acid.mg.L.", "acetic_acid.g.L.")),
+                     tibble(plotgroup = 'group 2',
+                            field_name_R = c("bitterness", "alpha.humulene", "X1.alpha.terpineol", "citronellol",
+                                             "geraniol", "linalool", "X2.3.butanedione", "X4VG", "acetaldehyde",
+                                             "methylpyrazine")),
+                     tibble(plotgroup = 'group 3',
+                            field_name_R = c("ammonia.mg.L.", "iron", "DMS", "SO2.mg.L.", "glycerol", "GFS", 
+                                             "protein.g.L.", "pH", "color.EBC.", "kcalperc"))) %>% 
+  left_join(thresholds %>% 
+              select(field_name_R,
+                     chemical_name,
+                     unit,
+                     threshold_median,
+                     origin_paper),
+            by = c('field_name_R' = 'field_name_R')) %>% 
+  mutate(clean_name = paste0(chemical_name,"\n(",unit,")")) %>% 
+  nest(.by = plotgroup)
+```
+
+Here we add the corresponding chemical measurements from the beer dataset (stored in chem_calibrated) to each group of our plot.\
+The data is in long format, so we have one column (property) that contains the 10 different chemicals within each group.
+
+```{r}
+rugplot_data <- rugplot_data %>% 
+  mutate(beer_data = map(data,
+                         .f = function(data){
+                           beer_data = chem_calibrated %>% 
+                             select(tasting_category_fine, data %>% pull(field_name_R)) %>% 
+                             mutate(tasting_category_fine = gsub('Low/No alcohol', 
+                                                                 'Non/low-alcohol', 
+                                                                 tasting_category_fine)) %>% 
+                             group_by(tasting_category_fine) %>%
+                             pivot_longer(data %>% pull(field_name_R),
+                                          names_to = "property",
+                                          values_to = "measurement") %>%
+                             left_join(data, by = c("property" = "field_name_R")) %>%
+                             mutate(chemical_name = factor(chemical_name, levels = data %>% pull(chemical_name))) %>% 
+                             ungroup()
+                           return(beer_data)
+                           })
+         )
+```
+
+Creating a plotting function for the histograms and for the rugplots, then running them on each plotgroup, adding them to our dataframe.
+
+```{r}
+hist_plot = function(data){
+  ggplot(data) +
+    geom_rect(data = data %>%
+                distinct(chemical_name, threshold_median),
+              aes(xmin = 0, xmax = threshold_median, ymin = 0, ymax = 100),
+              fill = "snow2", color = NA, alpha = 0.6) +
+    geom_histogram(aes(measurement, fill = origin_paper), bins = 20, color = NA,
+                   alpha = 1) +
+    facet_grid(cols = vars(chemical_name), scales = "free") +
+    scale_x_log10(labels = scales::label_log(base = 10, digits = 1),
+                  breaks = scales::log_breaks(n = 4, base = 10)) +
+    scale_y_continuous(name = "All styles", expand = c(0,0), limits = c(0,100)) +
+    scale_color_manual(values = c("Malt" = color_malt, "Hops" = color_hop, 
+                                  "Yeast" = color_yeast, "Wild flora" = color_wildflora, 
+                                  "Others" = color_other, "Spices" = color_other)) +
+    scale_fill_manual(values = c("Malt" = color_malt, "Hops" = color_hop, 
+                                 "Yeast" = color_yeast, "Wild flora" = color_wildflora, 
+                                 "Others" = color_other, "Spices" = color_other)) + 
+    theme(strip.text.x = element_text(size = 6, margin = grid::unit(c(0,0,1,0), "mm")),
+          plot.margin = grid::unit(c(1,1,0,6.3), "mm"),
+          panel.background = element_blank(),
+          panel.grid = element_blank(),
+          panel.border = element_rect(colour = "snow2", fill = NA, linewidth = 0.5),
+          panel.spacing = grid::unit(1, "points"),
+          strip.background = element_blank(),
+          axis.title.x = element_blank(),
+          axis.text.x = element_blank(),
+          axis.ticks.x = element_blank(),
+          axis.title.y = element_text(vjust = 0.5, hjust = 1, angle = 0, size = 7),
+          axis.text.y = element_text(size = 5),
+          legend.position = "none")
+}
+
+rugplot = function(data){
+  ggplot(data) +
+    geom_rect(data = data %>%
+                distinct(chemical_name, threshold_median),
+              aes(xmin = 0, xmax = threshold_median, ymin = 0, ymax = 1),
+              fill = "snow2", color = NA, alpha = 0.6) +
+    geom_vline(aes(xintercept = measurement, color = origin_paper),
+               alpha = 0.7, size = 1) +
+    facet_grid(rows = vars(tasting_category_fine), cols = vars(chemical_name), 
+               scales = "free_x", switch = "both", 
+               labeller = labeller(chemical_name = data %>% 
+                                     distinct(chemical_name, unit) %>% 
+                                     pull(unit, name = chemical_name))) +
+    scale_x_log10(labels = scales::label_log(base = 10, digits = 1),
+                  breaks = scales::log_breaks(n = 4, base = 10)) +
+    scale_y_continuous(expand = c(0,0), limits = c(0,1), labels = NULL) +
+    scale_color_manual(values = c("Malt" = color_malt, "Hops" = color_hop, 
+                                  "Yeast" = color_yeast, "Wild flora" = color_wildflora, 
+                                  "Others" = color_other, "Spices" = color_other)) +
+    theme(strip.text.x = element_text(size = 6, vjust = 1, margin = margin(0,0,0,0, "mm")),
+          strip.placement = "outside",
+          strip.text.y.left = element_text(angle = 0, hjust = 1, vjust = 0.5, size = 6, 
+                                           margin = grid::unit(c(0,1.4,0,0), "mm")),
+          panel.background = element_blank(),
+          panel.grid = element_blank(),
+          panel.border = element_rect(colour = "snow2", fill = NA, linewidth = 0.5),
+          panel.spacing = grid::unit(1, "points"),
+          strip.background = element_blank(),
+          plot.margin = grid::unit(c(0,1,0,1), "mm"),
+          axis.title.x = element_blank(),
+          axis.text.x = element_text(size = 6, margin = margin(0,0,0,0, "mm"), angle = 0),
+          axis.ticks.y = element_blank(),
+          legend.position = "none")
+}
+
+rugplot_data <- rugplot_data %>% 
+  mutate(histograms = map(beer_data,
+                          hist_plot),
+         rugplots = map(beer_data,
+                        rugplot))
+```
+
+```{r}
+g_chem <- ggarrange(rugplot_data$histograms[[1]], rugplot_data$rugplots[[1]],
+                    rugplot_data$histograms[[2]], rugplot_data$rugplots[[2]],
+                    rugplot_data$histograms[[3]], rugplot_data$rugplots[[3]],
+                    heights = c(1.2,4,1.2,4,1.2,4), 
+                    nrow = 6, ncol = 1,
+                    align = 'v')
+```
+
+```{r}
+ggsave(g_chem, 
+       filename = "chemical_data_rugplot.png",
+       dpi = 600, width = 7.6, height = 9)
+```
+
+### Sensory rugplots
+
+```{r}
+attribute_origin = tibble(property = c("F_malt_all", "F_hops_all", "F_esters_all", "bitternes", "sweetness", 
+                                       "acidity", "alcohol",  "body", "overall"),
+                          clean_name = c("Malt taste", "Hop taste", "Ester taste", "Acidity", 
+                                         "Bitterness", "Sweetness", "Alcohol", "Body fullness",
+                                         "Overall\n(Trained panel)"),
+                          color = c("color_malt", "color_hop", "color_yeast", "color_wildflora", "color_hop", 
+                                    "color_malt", "color_yeast", "color_other", "color_other"))
+
+sensory <- sensory_data %>%
+  select(beer, beer_id, tasting_category_fine, F_malt_all, F_hops_all, F_esters_all, bitternes, sweetness, acidity, alcohol,  body, overall) %>% 
+  pivot_longer(cols = c(-beer, -beer_id, -tasting_category_fine),
+               names_to = 'property',
+               values_to = 'measurement') %>% 
+  left_join(attribute_origin,
+            by = c('property' = 'property')) %>% 
+  mutate(clean_name = factor(clean_name, levels = unique(clean_name))) %>% 
+  mutate(tasting_category_fine = gsub('Low/No alcohol', 
+                                      'Non/low-alcohol', 
+                                      tasting_category_fine))
+
+
+g_histogram_sens1 <- ggplot(sensory, aes(measurement)) +
+  geom_histogram(aes(fill = color), bins = 15) +
+  facet_grid(cols = vars(clean_name), scales = "free") +
+  scale_y_continuous(name = "All styles", limits = c(0, 125)) +
+  scale_fill_manual(values = c("color_malt" = color_malt, "color_hop" = color_hop, 
+                               "color_yeast" = color_yeast, "color_wildflora" = color_wildflora, 
+                               "color_other" = color_other)) + 
+  theme_bw() +
+  theme(strip.text.x = element_text(size = 6, margin = grid::unit(c(0,0,1,0), "mm")),
+        plot.margin = grid::unit(c(1,1,0,6), "mm"),
+        panel.background = element_blank(),
+        panel.grid = element_blank(),
+        panel.border = element_rect(colour = "grey", fill = NA, linewidth = 0.5),
+        panel.spacing = grid::unit(1, "points"),
+        strip.background = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.y = element_text(vjust = 0.5, hjust = 1, angle = 0, size = 7),
+        axis.text.y = element_text(size = 5),
+        legend.position = "none")
+
+
+g_rugplot_sens1 <- ggplot(sensory, aes(x = measurement)) +
+  geom_vline(aes(xintercept = measurement, color = color), alpha = 0.7, size = 1) +
+  facet_grid(rows = vars(tasting_category_fine), cols = vars(clean_name), 
+             scales = "free_x", switch = "both") +
+  scale_y_continuous(expand = c(0,0), limits = c(0,1), labels = NULL) +
+  scale_color_manual(values = c("color_malt" = color_malt, "color_hop" = color_hop, 
+                                "color_yeast" = color_yeast, "color_wildflora" = color_wildflora, 
+                                "color_other" = color_other)) + 
+  theme_bw() +
+  theme(strip.text.x = element_blank(),
+        strip.placement = "outside",
+        strip.text.y.left = element_text(angle = 0, hjust = 1, vjust = 0.5, size = 6, 
+                                         margin = grid::unit(c(0,2.1,0,0), "mm")),
+        panel.background = element_blank(),
+        panel.grid = element_blank(),
+        panel.border = element_rect(colour = "grey", fill = NA, size = 0.5),
+        panel.spacing = grid::unit(1, "points"),
+        strip.background = element_blank(),
+        plot.margin = grid::unit(c(0,1,0,0), "mm"),
+        axis.title.x = element_blank(),
+        axis.text.x = element_text(size = 5, margin = margin(0,0,0,0, "mm"), angle = 0),
+        axis.ticks.y = element_blank(),
+        legend.position = "none")
+
+
+g_sens <- ggarrange(g_histogram_sens1, g_rugplot_sens1,
+                    heights = c(1.2,4), 
+                    nrow = 2, ncol = 1)
+
+ggsave(g_sens, 
+       filename = "sensory_data_rugplot.png",
+       dpi = 600, width = 7.6, height = 3)
+```
+
+Alternative, saving everything in one figure
+
+```{r}
+g_chem_sens <- ggarrange(rugplot_data$histograms[[1]], rugplot_data$rugplots[[1]],
+                         rugplot_data$histograms[[2]], rugplot_data$rugplots[[2]],
+                         rugplot_data$histograms[[3]], rugplot_data$rugplots[[3]],
+                         g_histogram_sens1, g_rugplot_sens1,
+                         heights = c(1.2,4,1.2,4,1.2,4,1.2,4), 
+                         nrow = 8, ncol = 1)
+ggsave(g_chem_sens, 
+       filename = "chemical-sensory_subset_log_histogram_rugplot.png",
+       dpi = 600, width = 7.6, height = 11)  
+```
+
+# Chemical and sensory correlation plots
+
+Note: Because the RateBeer scores are property of RateBeer (ZX Ventures USA), only the data for the trained panel dataset is provided for this Figure.
+
+Libraries
+
+```{r}
+library(tidyverse)
+library(RColorBrewer)
+library(gridExtra)
+```
+
+Colors
+
+```{r}
+color_yeast <- "#E86A3B"
+color_malt <- "#6BA8C9"
+color_hop <- "#ABD17D"
+color_wildflora <- "#FACA13"
+color_other <- "#5A5F62"
+palette <- c(Malt = color_malt, 
+             Hops = color_hop, 
+             Yeast = color_yeast, 
+             Spices = color_other, 
+             Others = color_other,
+             "Wild flora" = color_wildflora)
+```
+
+### Functions
+
+Calculate the spearman correlation
+
+```{r}
+spearman_cor <- function(df){
+  rho_cor <- cor(x = df %>% select(2), y = df %>% select(score), 
+                 use = "pairwise.complete.obs", method = "spearman")
+  return(c(df %>% distinct(cleanname), "rho" = format(round(rho_cor,2), nsmall = 2)))
+}
+```
+
+Plotting function:
+
+1.  Properly format the names of all variables
+2.  Include threshold information
+3.  Calculate spearman correlation with the function above
+
+```{r}
+chem_sense_facet <- function(data, chemical, sensory1, sensory2,
+                             axis_title_size = 8,  axis_text_size = 7, padding = 0.02){
+  chemical_name <- thresholds %>%
+    filter(field_name_R == chemical) %>%
+    mutate(compound_label = paste0(chemical_name," (",unit,")")) %>%
+    pull(compound_label)
+  sensory_name1 <- clean_names %>% 
+    filter(R_name == sensory1) %>%
+    pull(CleanName_PanelFeedback)
+  sensory_name2 <- clean_names %>%
+    filter(R_name == sensory2) %>%
+    pull(CleanName_PanelFeedback)
+  color <- palette[thresholds%>%
+    filter(field_name_R == chemical) %>%
+    pull(origin_paper)]
+  
+  threshold_median <- thresholds %>% filter(field_name_R == chemical) %>% pull(threshold_median)
+  
+  data_long <- data %>%
+    select(beer, all_of(c(chemical, sensory1, sensory2))) %>% 
+    pivot_longer(cols = c(sensory1, sensory2), names_to = 'aspect', values_to = 'score') %>% 
+    left_join(data.frame(aspect = c(sensory1, sensory2), 
+                         cleanname = c(sensory_name1, sensory_name2)), 
+              by = c("aspect" = "aspect"))
+  
+  rho_spearman <- data_long %>%
+    group_split(cleanname) %>%
+    map(spearman_cor) %>%
+    bind_rows() %>%
+    mutate(!!sym(chemical) := 0.9*max(data_long %>% select(all_of(chemical)))) %>%
+    mutate(score := max(data_long %>% select(score)))
+  
+  data_facet <- ggplot(data_long, aes(x = !!sym(chemical), y = score)) +
+    annotate(xmin = -Inf, xmax = threshold_median, ymin = -Inf, ymax = Inf, geom = 'rect', 
+             alpha = 0.6, fill = "snow2") +
+    geom_point(size = 0.3, color = color, alpha = 0.8) +
+    geom_text(data = rho_spearman, aes(label = paste0("ρ = ", rho)), size = 2.5,
+              vjust = 1, hjust = 1) +
+    scale_x_continuous(name = chemical_name, expand = c(padding, padding)) +
+    facet_wrap(vars(cleanname), strip.position = "left", nrow = 2) +
+    theme_bw() +
+    theme(panel.grid = element_blank(),
+          strip.background = element_blank(),
+          strip.text.x = element_blank(),
+          strip.text.y = element_text(size = axis_title_size, margin = margin(0,0,0,0)),
+          strip.placement = "outside",
+          axis.title = element_text(size = axis_title_size),
+          axis.title.y = element_blank(),
+          axis.text = element_text(size = axis_text_size),
+          plot.margin=unit(c(2,2,2,2), "points"))
+  
+  return(data_facet)
+}
+```
+
+```{r}
+chem_sense_plot <- function(data, chemical, sensory, color, 
+                            axis_title_size = 8,  axis_text_size = 7, padding = 0.02){
+  chemical_name <- thresholds %>%
+    filter(field_name_R == chemical) %>%
+    mutate(compound_label = paste0(chemical_name," (",unit,")")) %>%
+    pull(compound_label)
+  sensory_name <- clean_names %>% 
+    filter(R_name == sensory) %>%
+    pull(CleanName_PanelFeedback)
+  color <- palette[thresholds %>%
+                     filter(field_name_R == chemical) %>%
+                     mutate(origin_paper = as.character(origin_paper)) %>%
+                     pull(origin_paper)]
+  threshold_median <- thresholds %>% filter(field_name_R == chemical) %>% pull(threshold_median)
+  
+  data_long <- data %>%
+    select(beer, !!sym(chemical), !!sym(sensory)) %>%
+    gather(key = "aspect", value = "score", !!sym(sensory)) %>%
+    left_join(data.frame(aspect = sensory, 
+                         cleanname = sensory_name), 
+              by = c("aspect" = "aspect"))
+  
+  rho_spearman <- data_long %>%
+    group_split(cleanname) %>%
+    map(spearman_cor) %>%
+    bind_rows() %>%
+    mutate(!!sym(chemical) := 0.9*max(data_long %>% select(!!sym(chemical)))) %>%
+    mutate(score := max(data_long %>% select(score)))
+  
+  data_plot <- ggplot(data_long, aes(x = !!sym(chemical), y = score)) +
+    annotate(xmin = -Inf, xmax = threshold_median, ymin = -Inf, ymax = Inf, geom = 'rect', 
+             alpha = 0.6, fill = "snow2") +
+    geom_point(size = 0.3, color = color, alpha = 0.8) +
+    geom_text(data = rho_spearman, aes(label = paste0("ρ = ",rho)), size = 2.5,
+              vjust = 1, hjust = 1) +
+    scale_x_continuous(name = chemical_name, expand = c(padding, padding)) +
+    scale_y_continuous(name = sensory_name) +
+    theme_bw() +
+    theme(panel.grid = element_blank(),
+          strip.background = element_blank(),
+          strip.text.x = element_blank(),
+          strip.text.y = element_text(size = axis_title_size, margin = margin(0,0,0,0)),
+          strip.placement = "outside",
+          axis.title = element_text(size = axis_title_size),
+          axis.text = element_text(size = axis_text_size),
+          plot.margin=unit(c(2,2,2,2), "points"))
+  
+  return(data_plot)
+}
+```
+
+### Gathering datasets
+
+Chemical data calibrated
+
+```{r}
+chem_data = read.csv('Calibrated chemical dataset.csv')
+sensory_data = read.csv("Supplemental File S4.csv")
+thresholds <- read.csv("Sensory thresholds.csv")
+clean_names <- read.csv("Sensory names.csv")
+```
+
+### Data pre-processing
+
+```{r}
+chem_calibrated = chem_data %>% 
+  select(beer,
+         ethyl_acetate, 
+         ethyl_decanoate, 
+         ethyl_hexanoate, 
+         ethyl_octanoate,
+         ethyl_propionate, 
+         isobutyl_acetate, 
+         isopentyl_acetate, 
+         octyl_acetate, 
+         phenethyl_acetate,
+         ethyl_2.methyl_butyrate, 
+         ethyl_isovalerate,
+         ethanol..v.v., 
+         isoamyl_alcohol, 
+         isobutanol, 
+         phenethyl_alcohol, 
+         glycerol,
+         bitterness, 
+         alpha.humulene, 
+         E.caryophyllene, 
+         X1.alpha.terpineol, 
+         citronellol, 
+         geraniol, 
+         linalool, 
+         Z.nerolidol,
+         acetic_acid.g.L., 
+         lactic_acid.mg.L.,
+         X2.3.butanedione, 
+         X4VG, 
+         acetaldehyde, 
+         CS2, 
+         DES, 
+         DMS, 
+         H2S, 
+         MeSH, 
+         SO2.mg.L.,
+         CO2.PSI.,
+         pH,
+         ammonia.mg.L., 
+         betaglucan.mg.L., 
+         color.EBC.,
+         iron, 
+         protein.g.L.,
+         GFS, 
+         unfermentables, 
+         kcalperc)
+
+data_all  <- chem_calibrated %>% 
+  left_join(sensory_data, by = c("beer" = "beer")) 
+```
+
+### Plotting correlations
+
+```{r}
+ethac_esters_facet <- chem_sense_facet(data_all,"ethyl_acetate", "A_esters_all","F_esters_all")
+ethac_nailpolish_facet <- chem_sense_facet(data_all,"ethyl_acetate", "A_esters_ethac", "F_esters_ethac")
+isoamyl_banana_facet <- chem_sense_facet(data_all,"isopentyl_acetate", "A_esters_isoaa", "F_esters_isoaa")
+phenac_floral_facet <- chem_sense_facet(data_all,"phenethyl_acetate", "A_esters_flower", "F_esters_flower")
+ethhex_fruity_facet <- chem_sense_facet(data_all,"ethyl_hexanoate", "A_esters_fruity", "F_esters_fruity")
+
+
+ethanol_overall_plot <- chem_sense_plot(data_all,"ethanol..v.v.", "overall")
+ethanol_alcohol_plot <- chem_sense_plot(data_all,"ethanol..v.v.", "alcohol")
+isoalpha_bitter_plot <- chem_sense_plot(data_all,"bitterness", "bitternes")
+gfs_sweet_plot <- chem_sense_plot(data_all,"GFS", "sweetness")
+acetic_sourness_plot <- chem_sense_plot(data_all,"acetic_acid.g.L.", "acidity")
+
+
+lay = rbind(c(1,2,3,4,5),
+        c(1,2,3,4,5),
+        c(6,7,8,9,10))
+
+grid_graph <- grid.arrange(ethac_esters_facet, ethac_nailpolish_facet, 
+                           isoamyl_banana_facet,
+                           phenac_floral_facet, ethhex_fruity_facet,
+                           ethanol_overall_plot, ethanol_alcohol_plot, 
+                           acetic_sourness_plot, 
+                           isoalpha_bitter_plot, gfs_sweet_plot, 
+                           layout_matrix = lay) 
+
+ggsave(grid_graph, 
+       filename = "chemical_sensory_scatterplots.png",
+       dpi = 600, width = 10, height = 4.5)
+```
+
+# Models trained with a style parameter
+
+We reran the GBM model with a style parameter (actually one parameter per style, in a dummy-variable way)
+
+```{r}
+library(tidyverse)
+```
+
+#### Loading datasets
+
+```{r}
+Style_importance <- read.csv("GBM model with style information.csv")
+clean_names <- read.csv("Sensory thresholds.csv")
+```
+
+#### Data wrangling
+
+```{r}
+Style_rank <- Style_importance %>% 
+  left_join(clean_names %>% select(field_name_R, chemical_name), 
+            by = join_by("Compound" == "field_name_R")) %>% 
+  arrange(-MDI) %>% 
+  mutate(MDI_rank = as.numeric(row.names(.))) %>% 
+  arrange(-SHAP) %>% 
+  mutate(SHAP_rank = as.numeric(row.names(.))) %>% 
+  mutate(chemical_name = ifelse(is.na(chemical_name), 
+                                gsub("_", " ", Compound),
+                                chemical_name))
+
+
+write.csv(Style_rank %>% filter(grepl("Style", chemical_name)),
+          "Ranked importance of the different styles.csv",
+          row.names = F)
+
+
+
+MDI_style <- Style_rank %>% 
+  rename(Importance = MDI) %>% 
+  arrange(Importance) %>% 
+  slice_tail(n = 15) %>% 
+  mutate(chemical_name = ifelse(is.na(chemical_name), 
+                                gsub("_", " ", Compound),
+                                chemical_name),
+         chemical_name = fct_inorder(chemical_name))
+  
+
+SHAP_style <- Style_rank %>% 
+  rename(Importance = SHAP) %>% 
+  arrange(Importance) %>% 
+  slice_tail(n = 15) %>% 
+  mutate(chemical_name = ifelse(is.na(chemical_name), 
+                                gsub("_", " ", Compound),
+                                chemical_name),
+         chemical_name = fct_inorder(chemical_name))
+```
+
+#### Plotting
+
+```{r}
+{
+  y_ax <- 'concentration'
+  y_angle <- 90
+  x_ax <- 'area'
+  viridis_code = 'C'
+  textsize = 12
+  pointsize = 1.5
+  legend_size = 0.85
+  textcolor = '#192945'
+}
+
+{
+  blue         = "#2c3e50" # blue
+  red          = "#e31a1c" # red
+  green        = "#18BC9C" # green
+  yellow       = "#CCBE93" # yellow
+  steel_blue   = "#a6cee3" # steel_blue
+  navy_blue    = "#1f78b4" # navy_blue
+  light_green  = "#b2df8a" # light_green
+  pink         = "#fb9a99" # pink
+  light_orange = "#fdbf6f" # light_orange
+  orange       = "#ff7f00" # orange
+  light_purple = "#cab2d6" # light_purple
+  purple       = "#6a3d9a" # purple
+}
+
+
+plot_MDI_style <- ggplot(MDI_style, aes(y = chemical_name, x = Importance)) + 
+  geom_bar(stat = "identity", fill = navy_blue) + 
+  theme_tq() +
+  labs(x = "MDI importance",
+       y = "") +
+  theme(axis.title.y = element_text(angle = y_angle, size = round(18*textsize/15), color = textcolor),
+        axis.title.x = element_text(size = round(16*textsize/15), color = textcolor),
+        axis.text.x = element_text(size = textsize, color = textcolor, angle = 0),
+        axis.text.y = element_text(size = textsize, color = textcolor),
+        axis.ticks = element_line(color = textcolor),
+        plot.title = element_text(size = round(18*textsize/15)),
+        legend.title = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.text = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.key.size = unit(legend_size, 'cm'),
+        panel.grid = element_blank(),
+        panel.background = element_rect(color = textcolor),
+        strip.text = element_text(size = round(16*textsize/15), face = 'bold')) +
+  ggtitle("") +
+  lims(x = c(0, NA))
+
+
+  
+
+plot_SHAP_style <- ggplot(SHAP_style, aes(y = chemical_name, x = Importance)) + 
+  geom_bar(stat = "identity", fill = orange) + 
+  theme_tq() +
+  labs(x = "SHAP importance",
+       y = "") +
+  theme(axis.title.y = element_text(angle = y_angle, size = round(18*textsize/15), color = textcolor),
+        axis.title.x = element_text(size = round(16*textsize/15), color = textcolor),
+        axis.text.x = element_text(size = textsize, color = textcolor, angle = 0),
+        axis.text.y = element_text(size = textsize, color = textcolor),
+        axis.ticks = element_line(color = textcolor),
+        plot.title = element_text(size = round(18*textsize/15)),
+        legend.title = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.text = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.key.size = unit(legend_size, 'cm'),
+        panel.grid = element_blank(),
+        panel.background = element_rect(color = textcolor),
+        strip.text = element_text(size = round(16*textsize/15), face = 'bold')) +
+  ggtitle("") +
+  lims(x = c(0, NA))
+
+
+
+Style_merge <- ggarrange(plot_MDI_style,
+                         plot_SHAP_style)
+
+ggsave("Style parameter importance.png",
+       plot = Style_merge,
+       units = 'mm',
+       height = 200,
+       width = 300)
+```
+
+# 100 Iterations of models
+
+```{r}
+library(tidyverse)
+library(patchwork)
+library(tidyquant)
+```
+
+#### Loading datasets
+
+```{r}
+performance <- read.csv("Performance of 100 models.csv")
+importance <- read.csv("100 models feature importance.csv")
+clean_names <- read.csv("Sensory thresholds.csv")
+```
+
+Preparing datasets
+
+```{r}
+performance <- performance %>% 
+  rename("Gradient Boosting" = GBM,
+         "Random Forest" = RF,
+         "Extra Trees" = ET) %>% 
+  pivot_longer(cols = -Iteration) %>% 
+  mutate(name = fct_inorder(name))
+
+
+importance <- importance %>% 
+  pivot_longer(cols = X0:X99, names_to = "Iteration") %>% 
+  mutate(Iteration = as.numeric(gsub("X", "", Iteration))) %>% 
+  nest(data = c(Iteration, value)) %>% 
+  left_join(clean_names %>% select(field_name_R, chemical_name), 
+            by = join_by(Compound == field_name_R)) %>% 
+  mutate(chemical_name = ifelse(is.na(chemical_name), "Performance", chemical_name),
+         Average = as.numeric(map(data, 
+                                  ~mean(.x$value))),
+         Standdev = as.numeric(map(data,
+                                   ~sd(.x$value))),
+         lin_model = map(data,
+                     ~lm(value ~ 1, .x)),
+         conf_low = as.numeric(map(lin_model,
+                                   ~confint(.x)[1])),
+         conf_high = as.numeric(map(lin_model,
+                                    ~confint(.x)[2]))) %>% 
+  arrange(-Average) %>% 
+  mutate(Model = fct_inorder(Model),
+         std_low = Average - Standdev,
+         std_high = Average + Standdev) %>% 
+  group_by(Model, Score) %>% 
+  slice(1:15)
+```
+
+#### Plotting performance, MDI and SHAP importance
+
+```{r}
+{
+  y_ax <- 'concentration'
+  y_angle <- 90
+  x_ax <- 'area'
+  viridis_code = 'C'
+  textsize = 12
+  pointsize = 1.5
+  legend_size = 0.85
+  textcolor = '#192945'
+}
+
+{
+  blue         = "#2c3e50" # blue
+  red          = "#e31a1c" # red
+  green        = "#18BC9C" # green
+  yellow       = "#CCBE93" # yellow
+  steel_blue   = "#a6cee3" # steel_blue
+  navy_blue    = "#1f78b4" # navy_blue
+  light_green  = "#b2df8a" # light_green
+  pink         = "#fb9a99" # pink
+  light_orange = "#fdbf6f" # light_orange
+  orange       = "#ff7f00" # orange
+  light_purple = "#cab2d6" # light_purple
+  purple       = "#6a3d9a" # purple
+}
+
+
+#### Performance
+
+plot_performance <- ggplot(performance, aes(x = value)) + 
+  facet_wrap(~ name) + 
+  geom_boxplot(color = textcolor) + 
+  coord_flip() +
+  theme_classic() + 
+  scale_x_continuous(n.breaks = 6,
+                     limits = c(0, 1)) +
+  theme_tq() +
+  labs(x = "Performance (R2)",
+       y = "",
+       title = " ") +
+  theme(axis.title.y = element_text(angle = y_angle, size = round(18*textsize/15), color = textcolor),
+        axis.title.x = element_text(size = round(18*textsize/15), color = textcolor),
+        axis.text.y = element_text(size = textsize, color = textcolor),
+        axis.text.x = element_blank(),
+        axis.ticks.y = element_line(color = textcolor),
+        axis.ticks.x = element_blank(),
+        plot.title = element_text(size = round(18*textsize/15), hjust = 0.5),
+        legend.title = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.text = element_text(size = round(16*textsize/15), color = textcolor),
+        legend.key.size = unit(legend_size, 'cm'),
+        panel.grid = element_blank(),
+        panel.background = element_rect(color = textcolor),
+        strip.text = element_text(size = round(16*textsize/15), face = 'bold'),
+        panel.spacing = unit(2, 'lines'))
+
+
+
+#### Importance plots
+
+plot_function = function(data, Model, Score, max_score){
+  y_axis = if(Model == "GBM"){
+    element_text(size = textsize, color = textcolor)
+    } else {
+      element_blank()
+    }
+  y_axis_ticks = if(Model == "GBM"){
+    element_line(color = textcolor)
+    } else {
+      element_blank()
+    }
+  
+  mycolor = if(Score == 'MDI'){
+   navy_blue 
+  } else {
+    orange
+  }
+  
+  ggplot(data, aes(x = chemical_name, y = Average)) + 
+    geom_point(color = mycolor, size = 2.5) + 
+    geom_errorbar(aes(xmin = chemical_name, xmax = chemical_name, ymin = std_low, ymax = std_high),
+                  width = 0.01, color = mycolor) + 
+    theme_tq() +
+    labs(x = "",
+         y = ifelse(Model == "GBM", paste(Score, "importance"), "")) +
+    theme(axis.title.y = element_text(angle = y_angle, size = round(18*textsize/15), color = textcolor),
+          axis.title.x = element_text(size = round(16*textsize/15), color = textcolor),
+          axis.text.x = element_text(size = textsize, color = textcolor, angle = 90, vjust = 0.5, 
+                                     hjust = 1),
+          axis.text.y = y_axis,
+          axis.ticks.x = element_line(color = textcolor),
+          axis.ticks.y = y_axis_ticks,
+          plot.title = element_text(size = round(18*textsize/15)),
+          legend.title = element_text(size = round(16*textsize/15), color = textcolor),
+          legend.text = element_text(size = round(16*textsize/15), color = textcolor),
+          legend.key.size = unit(legend_size, 'cm'),
+          panel.grid = element_blank(),
+          panel.background = element_rect(color = textcolor),
+          strip.text = element_text(size = round(16*textsize/15), face = 'bold')) +
+    ggtitle("") + 
+    ylim(0, max_score)
+}
+
+
+importance_plots <- importance %>% 
+  group_by(Score) %>% 
+  mutate(max_score = max(std_high)) %>% 
+  nest(data = Compound:std_high) %>% 
+  mutate(data = map(data, ~ .x %>% mutate(chemical_name = fct_inorder(chemical_name))), 
+         plots = pmap(.l = list(data, Model, Score, max_score), 
+                      .f = plot_function))
+```
+
+### Merging plots into one figure
+
+```{r}
+my_awesome_plot <- plot_performance + 
+  importance_plots$plots + 
+  plot_layout(design = '111
+                        246
+                        357')
+
+ggsave("Results from 100 iterations.svg",
+       plot = my_awesome_plot,
+       units = "mm",
+       width = 250,
+       height = 350)
+```

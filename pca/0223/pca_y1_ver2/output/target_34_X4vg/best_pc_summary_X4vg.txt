@@ -1,0 +1,6 @@
+Target: X4vg (index 34)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.665644, R2=0.046037, ACC(corr)=0.214562
+Test : RMSE=0.543147, R2=0.095353, ACC(corr)=0.315521
+Model: y = 0.033649 * z + -0.021663

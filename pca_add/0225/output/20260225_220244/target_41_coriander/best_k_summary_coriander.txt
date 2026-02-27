@@ -1,0 +1,6 @@
+Target: coriander (index 41)
+Best k (selection=CV_RMSE): 15
+Cum EVR(%): 58.145723
+CV   : RMSE=0.334301 (std 0.081937), R2=0.020464
+Train: RMSE=0.312650, R2=0.363471, ACC(corr)=0.602885
+Test : RMSE=1.052631, R2=-2.457234, ACC(corr)=0.153698

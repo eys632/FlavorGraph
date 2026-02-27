@@ -1,0 +1,6 @@
+Target: bitternes (index 32)
+Best k (selection=CV_RMSE): 12
+Cum EVR(%): 53.816778
+CV   : RMSE=0.472292 (std 0.024374), R2=0.513396
+Train: RMSE=0.425953, R2=0.641868, ACC(corr)=0.801167
+Test : RMSE=0.507635, R2=0.564397, ACC(corr)=0.752299

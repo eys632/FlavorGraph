@@ -1,0 +1,6 @@
+Target: dms (index 36)
+Best PC (full index): 88 | (kept index): 88
+EVR(%): 0.171614
+Train: RMSE=0.498214, R2=0.008499, ACC(corr)=0.092190
+Test : RMSE=0.486673, R2=0.034478, ACC(corr)=0.241563
+Model: y = -0.073260 * z + -0.004593

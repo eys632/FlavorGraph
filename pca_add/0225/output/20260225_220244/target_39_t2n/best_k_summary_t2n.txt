@@ -1,0 +1,6 @@
+Target: t2n (index 39)
+Best k (selection=CV_RMSE): 5
+Cum EVR(%): 37.275518
+CV   : RMSE=0.394891 (std 0.062215), R2=0.022007
+Train: RMSE=0.385822, R2=0.087475, ACC(corr)=0.295762
+Test : RMSE=0.432686, R2=-0.250168, ACC(corr)=0.140609

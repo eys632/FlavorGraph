@@ -1,0 +1,6 @@
+Target: X4vg (index 34)
+Best k (selection=CV_RMSE): 3
+Cum EVR(%): 28.328586
+CV   : RMSE=0.639158 (std 0.225645), R2=-0.074204
+Train: RMSE=0.648611, R2=0.094235, ACC(corr)=0.306978
+Test : RMSE=0.926732, R2=-1.633619, ACC(corr)=0.138178

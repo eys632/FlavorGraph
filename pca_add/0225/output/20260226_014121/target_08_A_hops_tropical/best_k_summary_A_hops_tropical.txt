@@ -1,0 +1,6 @@
+Target: A_hops_tropical (index 8)
+Best k (selection=CV_RMSE): 4
+Cum EVR(%): 33.206098
+CV   : RMSE=0.591160 (std 0.110095), R2=0.077976
+Train: RMSE=0.588784, R2=0.154525, ACC(corr)=0.393096
+Test : RMSE=0.812223, R2=-1.410605, ACC(corr)=0.065774

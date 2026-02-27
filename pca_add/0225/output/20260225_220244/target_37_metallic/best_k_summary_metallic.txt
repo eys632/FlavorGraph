@@ -1,0 +1,6 @@
+Target: metallic (index 37)
+Best k (selection=CV_RMSE): 5
+Cum EVR(%): 37.275518
+CV   : RMSE=0.489122 (std 0.061495), R2=0.002299
+Train: RMSE=0.481466, R2=0.065272, ACC(corr)=0.255485
+Test : RMSE=0.987777, R2=-3.699720, ACC(corr)=-0.013101

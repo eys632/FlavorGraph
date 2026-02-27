@@ -1,0 +1,6 @@
+Target: A_malt_all (index 1)
+Best PC (full index): 1 | (kept index): 1
+EVR(%): 14.323116
+Train: RMSE=0.666244, R2=0.014925, ACC(corr)=0.122166
+Test : RMSE=0.789232, R2=0.043233, ACC(corr)=0.340511
+Model: y = -0.014257 * z + 0.014852

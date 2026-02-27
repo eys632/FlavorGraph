@@ -1,0 +1,6 @@
+Target: F_malt_grain (index 17)
+Best k (selection=CV_RMSE): 9
+Cum EVR(%): 48.256443
+CV   : RMSE=0.436701 (std 0.066743), R2=0.071379
+Train: RMSE=0.414374, R2=0.195045, ACC(corr)=0.441639
+Test : RMSE=1.184413, R2=-7.106015, ACC(corr)=0.128014

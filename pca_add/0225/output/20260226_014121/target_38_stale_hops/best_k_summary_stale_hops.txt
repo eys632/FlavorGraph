@@ -1,0 +1,6 @@
+Target: stale_hops (index 38)
+Best k (selection=CV_RMSE): 5
+Cum EVR(%): 37.275518
+CV   : RMSE=0.410250 (std 0.102309), R2=0.063109
+Train: RMSE=0.410238, R2=0.092076, ACC(corr)=0.303440
+Test : RMSE=0.670750, R2=-1.101502, ACC(corr)=0.100488

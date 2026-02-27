@@ -1,0 +1,6 @@
+Target: F_hops_noble (index 24)
+Best k (selection=CV_RMSE): 8
+Cum EVR(%): 45.893585
+CV   : RMSE=0.492634 (std 0.060248), R2=0.349861
+Train: RMSE=0.475745, R2=0.407769, ACC(corr)=0.638568
+Test : RMSE=1.210402, R2=-3.202796, ACC(corr)=0.253261

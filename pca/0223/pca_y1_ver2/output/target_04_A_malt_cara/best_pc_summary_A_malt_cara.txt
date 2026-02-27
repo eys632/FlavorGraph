@@ -1,0 +1,6 @@
+Target: A_malt_cara (index 4)
+Best PC (full index): 105 | (kept index): 105
+EVR(%): 0.104375
+Train: RMSE=0.633713, R2=0.009425, ACC(corr)=0.097084
+Test : RMSE=0.585739, R2=0.053284, ACC(corr)=0.250794
+Model: y = 0.125890 * z + 0.035933

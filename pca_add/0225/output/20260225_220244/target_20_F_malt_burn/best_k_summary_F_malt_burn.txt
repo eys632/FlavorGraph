@@ -1,0 +1,6 @@
+Target: F_malt_burn (index 20)
+Best k (selection=CV_RMSE): 21
+Cum EVR(%): 65.100434
+CV   : RMSE=0.548092 (std 0.063239), R2=0.047919
+Train: RMSE=0.485277, R2=0.335980, ACC(corr)=0.579638
+Test : RMSE=1.507297, R2=-2.236429, ACC(corr)=0.231676

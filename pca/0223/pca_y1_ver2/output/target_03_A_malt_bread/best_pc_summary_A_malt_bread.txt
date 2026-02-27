@@ -1,0 +1,6 @@
+Target: A_malt_bread (index 3)
+Best PC (full index): 37 | (kept index): 37
+EVR(%): 0.617611
+Train: RMSE=0.539276, R2=0.003716, ACC(corr)=0.060962
+Test : RMSE=0.472626, R2=0.013637, ACC(corr)=0.137655
+Model: y = 0.027575 * z + 0.046517

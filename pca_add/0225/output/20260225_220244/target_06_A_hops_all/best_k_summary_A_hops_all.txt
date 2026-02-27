@@ -1,0 +1,6 @@
+Target: A_hops_all (index 6)
+Best k (selection=CV_RMSE): 4
+Cum EVR(%): 33.206098
+CV   : RMSE=0.531502 (std 0.024177), R2=0.327016
+Train: RMSE=0.516362, R2=0.388918, ACC(corr)=0.623633
+Test : RMSE=0.685086, R2=-0.116052, ACC(corr)=0.430123

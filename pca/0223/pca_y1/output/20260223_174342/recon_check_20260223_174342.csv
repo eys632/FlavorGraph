@@ -1,0 +1,2 @@
+n_train,p,k_keep,standardize_before_pca,eig_tol,reconstruction_rmse,reconstruction_max_abs_err
+175,231,174,True,1e-12,1.6404119125200864e-13,6.821210263296962e-12

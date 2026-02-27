@@ -1,0 +1,6 @@
+Target: A_hops_citrus (index 7)
+Best k (selection=CV_RMSE): 9
+Cum EVR(%): 48.256443
+CV   : RMSE=0.461227 (std 0.041931), R2=0.087827
+Train: RMSE=0.415158, R2=0.281702, ACC(corr)=0.530756
+Test : RMSE=0.672455, R2=-0.995987, ACC(corr)=0.251420

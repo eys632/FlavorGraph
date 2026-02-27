@@ -1,0 +1,6 @@
+Target: acidity (index 31)
+Best k (selection=CV_RMSE): 13
+Cum EVR(%): 55.382343
+CV   : RMSE=0.465799 (std 0.050929), R2=0.672926
+Train: RMSE=0.422967, R2=0.746753, ACC(corr)=0.864149
+Test : RMSE=2.213898, R2=-5.150047, ACC(corr)=0.228329

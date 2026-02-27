@@ -1,0 +1,6 @@
+Target: diacetyl (index 35)
+Best PC (full index): 149 | (kept index): 149
+EVR(%): 0.020593
+Train: RMSE=0.546392, R2=0.001947, ACC(corr)=0.044120
+Test : RMSE=0.438048, R2=-0.069658, ACC(corr)=0.077990
+Model: y = 0.110636 * z + 0.027681

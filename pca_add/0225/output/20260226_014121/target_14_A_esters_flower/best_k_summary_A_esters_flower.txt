@@ -1,0 +1,6 @@
+Target: A_esters_flower (index 14)
+Best k (selection=CV_RMSE): 6
+Cum EVR(%): 40.411782
+CV   : RMSE=0.433648 (std 0.054488), R2=-0.102180
+Train: RMSE=0.397890, R2=0.102163, ACC(corr)=0.319630
+Test : RMSE=1.107489, R2=-5.598638, ACC(corr)=0.514087

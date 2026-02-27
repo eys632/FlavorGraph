@@ -1,0 +1,6 @@
+Target: A_esters_ethac (index 12)
+Best PC (full index): 112 | (kept index): 112
+EVR(%): 0.088213
+Train: RMSE=0.513031, R2=0.000228, ACC(corr)=0.015108
+Test : RMSE=0.455581, R2=0.018450, ACC(corr)=0.152208
+Model: y = 0.017172 * z + -0.002850

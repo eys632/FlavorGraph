@@ -1,0 +1,6 @@
+Target: A_esters_flower (index 14)
+Best PC (full index): 28 | (kept index): 28
+EVR(%): 0.833109
+Train: RMSE=0.418217, R2=0.008084, ACC(corr)=0.089910
+Test : RMSE=0.367300, R2=0.274201, ACC(corr)=0.525719
+Model: y = 0.027215 * z + -0.031473

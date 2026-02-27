@@ -1,0 +1,6 @@
+Target: overall (index 50)
+Best PC (full index): 121 | (kept index): 121
+EVR(%): 0.064043
+Train: RMSE=0.539778, R2=0.041948, ACC(corr)=0.204811
+Test : RMSE=0.526937, R2=0.023099, ACC(corr)=0.202898
+Model: y = -0.293651 * z + 0.010695

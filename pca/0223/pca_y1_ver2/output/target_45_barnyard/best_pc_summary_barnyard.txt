@@ -1,0 +1,6 @@
+Target: barnyard (index 45)
+Best PC (full index): 22 | (kept index): 22
+EVR(%): 1.001884
+Train: RMSE=0.441018, R2=0.000852, ACC(corr)=0.029189
+Test : RMSE=0.462157, R2=0.005013, ACC(corr)=0.098560
+Model: y = 0.008465 * z + -0.038299

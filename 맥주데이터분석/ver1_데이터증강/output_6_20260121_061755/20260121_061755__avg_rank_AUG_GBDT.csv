@@ -1,0 +1,7 @@
+﻿synth,avg_rank_AUG_GBDT
+VAE,2.56
+GaussianCopula,2.9
+TabDDPM,3.56
+CTGAN,3.82
+Bootstrapping,3.86
+KDE,4.3

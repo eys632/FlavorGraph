@@ -1,0 +1,6 @@
+Target: A_malt_bread (index 3)
+Best k (selection=CV_RMSE): 8
+Cum EVR(%): 45.893585
+CV   : RMSE=0.509683 (std 0.078828), R2=0.093248
+Train: RMSE=0.493346, R2=0.166195, ACC(corr)=0.407670
+Test : RMSE=1.130652, R2=-4.644949, ACC(corr)=0.058317

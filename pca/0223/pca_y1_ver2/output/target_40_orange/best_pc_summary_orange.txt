@@ -1,0 +1,6 @@
+Target: orange (index 40)
+Best PC (full index): 147 | (kept index): 147
+EVR(%): 0.021949
+Train: RMSE=0.713591, R2=0.000269, ACC(corr)=0.016393
+Test : RMSE=0.597141, R2=0.014375, ACC(corr)=0.175274
+Model: y = 0.051958 * z + 0.028166

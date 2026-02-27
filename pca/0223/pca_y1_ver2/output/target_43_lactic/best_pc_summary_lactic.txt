@@ -1,0 +1,6 @@
+Target: lactic (index 43)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.589391, R2=0.220940, ACC(corr)=0.470043
+Test : RMSE=0.745404, R2=0.256626, ACC(corr)=0.551400
+Model: y = -0.072227 * z + -0.019392

@@ -1,0 +1,6 @@
+Target: F_hops_woody (index 25)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.462449, R2=0.060008, ACC(corr)=0.244966
+Test : RMSE=0.404236, R2=0.126918, ACC(corr)=0.372279
+Model: y = 0.026887 * z + -0.007243

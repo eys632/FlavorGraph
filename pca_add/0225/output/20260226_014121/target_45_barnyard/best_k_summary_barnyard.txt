@@ -1,0 +1,6 @@
+Target: barnyard (index 45)
+Best k (selection=CV_RMSE): 15
+Cum EVR(%): 58.145723
+CV   : RMSE=0.419483 (std 0.092795), R2=0.064916
+Train: RMSE=0.390936, R2=0.214894, ACC(corr)=0.463566
+Test : RMSE=0.478023, R2=-0.064476, ACC(corr)=0.143739

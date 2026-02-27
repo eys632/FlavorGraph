@@ -1,0 +1,6 @@
+Target: A_malt_grain (index 2)
+Best PC (full index): 90 | (kept index): 90
+EVR(%): 0.162399
+Train: RMSE=0.469100, R2=0.001549, ACC(corr)=0.039355
+Test : RMSE=0.416022, R2=0.035244, ACC(corr)=0.216201
+Model: y = 0.030165 * z + 0.010703

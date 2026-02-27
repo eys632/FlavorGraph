@@ -1,0 +1,6 @@
+Target: A_esters_all (index 11)
+Best k (selection=CV_RMSE): 7
+Cum EVR(%): 43.356504
+CV   : RMSE=0.541561 (std 0.113060), R2=0.112039
+Train: RMSE=0.532685, R2=0.172929, ACC(corr)=0.415847
+Test : RMSE=1.161413, R2=-2.381448, ACC(corr)=0.331531

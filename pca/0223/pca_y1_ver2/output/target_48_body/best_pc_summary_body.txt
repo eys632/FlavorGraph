@@ -1,0 +1,6 @@
+Target: body (index 48)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.454611, R2=0.324547, ACC(corr)=0.569690
+Test : RMSE=0.491536, R2=0.307799, ACC(corr)=0.555293
+Model: y = 0.072514 * z + 0.004675

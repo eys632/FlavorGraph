@@ -1,0 +1,6 @@
+Target: coriander (index 41)
+Best PC (full index): 18 | (kept index): 18
+EVR(%): 1.210355
+Train: RMSE=0.386840, R2=0.025535, ACC(corr)=0.159798
+Test : RMSE=0.563890, R2=0.007877, ACC(corr)=0.129118
+Model: y = 0.037450 * z + -0.023745

@@ -1,0 +1,6 @@
+Target: body (index 48)
+Best k (selection=CV_RMSE): 21
+Cum EVR(%): 65.100434
+CV   : RMSE=0.385619 (std 0.036288), R2=0.487813
+Train: RMSE=0.346303, R2=0.608051, ACC(corr)=0.779776
+Test : RMSE=0.663789, R2=-0.262358, ACC(corr)=0.526217

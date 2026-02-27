@@ -1,0 +1,6 @@
+Target: A_hops_woody (index 10)
+Best k (selection=CV_RMSE): 4
+Cum EVR(%): 33.206098
+CV   : RMSE=0.330096 (std 0.034859), R2=0.048335
+Train: RMSE=0.321236, R2=0.141769, ACC(corr)=0.376522
+Test : RMSE=0.417923, R2=-0.027067, ACC(corr)=0.154721

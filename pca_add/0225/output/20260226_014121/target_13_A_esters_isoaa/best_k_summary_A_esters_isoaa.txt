@@ -1,0 +1,6 @@
+Target: A_esters_isoaa (index 13)
+Best k (selection=CV_RMSE): 1
+Cum EVR(%): 14.323116
+CV   : RMSE=0.533587 (std 0.090845), R2=-0.020657
+Train: RMSE=0.534770, R2=0.007613, ACC(corr)=0.087251
+Test : RMSE=0.550704, R2=-0.046791, ACC(corr)=-0.203826

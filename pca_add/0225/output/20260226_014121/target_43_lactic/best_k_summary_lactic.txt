@@ -1,0 +1,6 @@
+Target: lactic (index 43)
+Best k (selection=CV_RMSE): 27
+Cum EVR(%): 70.584059
+CV   : RMSE=0.393360 (std 0.067355), R2=0.644581
+Train: RMSE=0.293271, R2=0.807113, ACC(corr)=0.898395
+Test : RMSE=2.337405, R2=-6.309576, ACC(corr)=0.322257

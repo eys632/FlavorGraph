@@ -1,0 +1,6 @@
+Target: t2n (index 39)
+Best PC (full index): 29 | (kept index): 29
+EVR(%): 0.794408
+Train: RMSE=0.400716, R2=0.015660, ACC(corr)=0.125140
+Test : RMSE=0.385424, R2=0.008024, ACC(corr)=0.186037
+Model: y = 0.037311 * z + -0.008028

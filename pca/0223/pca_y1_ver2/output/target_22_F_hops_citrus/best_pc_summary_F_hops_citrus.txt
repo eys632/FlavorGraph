@@ -1,0 +1,6 @@
+Target: F_hops_citrus (index 22)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.441756, R2=0.019762, ACC(corr)=0.140576
+Test : RMSE=0.442581, R2=0.036942, ACC(corr)=0.208508
+Model: y = 0.014433 * z + -0.024851

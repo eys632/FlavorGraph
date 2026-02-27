@@ -1,0 +1,6 @@
+Target: alcohol (index 46)
+Best k (selection=CV_RMSE): 7
+Cum EVR(%): 43.356504
+CV   : RMSE=0.459047 (std 0.046259), R2=0.632396
+Train: RMSE=0.437735, R2=0.673736, ACC(corr)=0.820814
+Test : RMSE=1.307225, R2=-2.177875, ACC(corr)=0.484149

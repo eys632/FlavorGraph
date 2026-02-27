@@ -1,0 +1,6 @@
+Target: A_malt_cara (index 4)
+Best k (selection=CV_RMSE): 21
+Cum EVR(%): 65.100434
+CV   : RMSE=0.590464 (std 0.085912), R2=0.093946
+Train: RMSE=0.498281, R2=0.387576, ACC(corr)=0.622556
+Test : RMSE=0.680928, R2=-0.279420, ACC(corr)=0.343920

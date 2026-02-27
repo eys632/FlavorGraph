@@ -1,0 +1,6 @@
+Target: F_esters_ethac (index 27)
+Best k (selection=CV_RMSE): 5
+Cum EVR(%): 37.275518
+CV   : RMSE=0.444227 (std 0.033961), R2=0.186052
+Train: RMSE=0.428730, R2=0.266415, ACC(corr)=0.516155
+Test : RMSE=0.657292, R2=-0.843476, ACC(corr)=0.171903

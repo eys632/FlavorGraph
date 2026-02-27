@@ -1,0 +1,6 @@
+Target: dms (index 36)
+Best k (selection=CV_RMSE): 14
+Cum EVR(%): 56.811583
+CV   : RMSE=0.507090 (std 0.061753), R2=-0.054267
+Train: RMSE=0.440224, R2=0.225879, ACC(corr)=0.475268
+Test : RMSE=2.670807, R2=-28.078560, ACC(corr)=0.142385

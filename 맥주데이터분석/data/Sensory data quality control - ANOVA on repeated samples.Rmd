@@ -1,0 +1,95 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+# Sensory data quality control - ANOVA of repeated samples
+
+```{r}
+rm(list = ls())
+cat('\014')
+pc_name <- file.path('C:/users', Sys.info()[7])
+setwd(file.path(pc_name, 'Dropbox (Verstrepen.lab)', 'BeerAromas', 'Sensory data quality control'))
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+rawdata = read.csv('Raw_Sensory_data_Trained_panel.csv')
+name_mappings = read.csv('Mapping_ColumnNames_short.csv')
+name_mappings = name_mappings %>% select(OldFormName, CleanName_PanelFeedback) %>% 
+  rename(name = OldFormName) %>% 
+  filter(!duplicated(name))
+
+{
+  y_ax <- 'concentration'
+  y_angle <- 0
+  x_ax <- 'area'
+  viridis_code = 'C'
+  textsize = 17
+  pointsize = 1.5
+  legend_size = 0.85
+  textcolor = '#192945'
+  }
+
+```
+
+```{r}
+multiple_sessions = rawdata %>% 
+  mutate(beer = paste('Beer', beer)) %>% 
+  group_by(beer, taster) %>%
+  filter(n_distinct(date) > 1) %>% 
+  filter(beer != 'Beer 201') %>% 
+  ungroup() %>%       # Removing the comments
+  pivot_longer(cols = c(6:55)) %>% 
+  select(-comments, -beer_category, -Beer)
+```
+
+## ANOVA on beers tasted multiple times
+
+Note: we do a simple ANOVA without repeated measures (possible with random effect for taster and p-values calculated from lmerTest), because we don't always have the same people tasting, and this would lead to many dropouts and missing data.
+
+```{r}
+anova_function = function(dataset, formula = value ~ date){
+  mod = lm(formula, data = dataset)
+  an = anova(mod)
+  return(an$`Pr(>F)`[1])
+}
+
+data_anova <- multiple_sessions %>% 
+  nest(data = c(date, taster, value)) %>% 
+  mutate(anova = map(data,
+                     ~anova_function(.)),
+         anova = round(as.numeric(anova), 3),
+         anova = ifelse(is.nan(anova), 1, anova))
+
+data_anova %>% 
+  mutate(significant = ifelse(anova < 0.05,
+                              'yes',
+                              'no')) %>% 
+  select(significant) %>% 
+  table()
+
+my_order = tibble(columns = unique(data_anova$beer)) %>% 
+  mutate(value = gsub('Beer ', '', columns),
+         value = as.numeric(value)) %>% 
+  arrange(value)
+
+data_anova_2 = data_anova %>% 
+  left_join(name_mappings, by = c('name' = 'name')) %>% 
+  select(-name) %>% 
+  rename(Attribute = CleanName_PanelFeedback) %>% 
+  arrange(beer) %>% 
+  pivot_wider(names_from = beer,
+              values_from = anova,
+              id_cols = Attribute) %>% 
+  select(Attribute, all_of(my_order$columns))
+
+write.csv(data_anova_2,
+          'Supplementary_table_XXXX_ANOVA_pvalues_of_trained_tasting_panel.csv',
+          row.names = F)
+```

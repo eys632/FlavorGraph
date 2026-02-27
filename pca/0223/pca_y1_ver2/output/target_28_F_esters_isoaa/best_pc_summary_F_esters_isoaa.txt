@@ -1,0 +1,6 @@
+Target: F_esters_isoaa (index 28)
+Best PC (full index): 3 | (kept index): 3
+EVR(%): 5.830214
+Train: RMSE=0.578555, R2=0.004952, ACC(corr)=0.070368
+Test : RMSE=0.487639, R2=0.151158, ACC(corr)=0.427173
+Model: y = -0.011121 * z + 0.085172

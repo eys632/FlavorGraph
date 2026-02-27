@@ -1,0 +1,6 @@
+Target: aftertaste (index 47)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.557215, R2=0.145340, ACC(corr)=0.381234
+Test : RMSE=0.589972, R2=0.190835, ACC(corr)=0.469529
+Model: y = 0.052876 * z + -0.008523

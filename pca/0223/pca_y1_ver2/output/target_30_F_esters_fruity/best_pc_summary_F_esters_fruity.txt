@@ -1,0 +1,6 @@
+Target: F_esters_fruity (index 30)
+Best PC (full index): 2 | (kept index): 2
+EVR(%): 8.175257
+Train: RMSE=0.446979, R2=0.061641, ACC(corr)=0.248277
+Test : RMSE=0.556073, R2=0.119791, ACC(corr)=0.403812
+Model: y = -0.026362 * z + 0.019570

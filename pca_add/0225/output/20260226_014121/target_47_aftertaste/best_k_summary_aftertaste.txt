@@ -1,0 +1,6 @@
+Target: aftertaste (index 47)
+Best k (selection=CV_RMSE): 11
+Cum EVR(%): 52.222987
+CV   : RMSE=0.435826 (std 0.064204), R2=0.455981
+Train: RMSE=0.408495, R2=0.540674, ACC(corr)=0.735305
+Test : RMSE=0.535281, R2=0.333902, ACC(corr)=0.604595
