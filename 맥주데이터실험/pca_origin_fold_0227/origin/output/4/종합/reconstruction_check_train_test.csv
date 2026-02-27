@@ -1,0 +1,2 @@
+﻿repeat,random_state,n_train,n_test,p,k_keep,standardize_before_pca,eig_tol,train_recon_rmse,train_recon_mae,train_recon_max_abs_err,test_recon_rmse,test_recon_mae,test_recon_max_abs_err
+4,20260231,175,75,231,174,True,1e-12,2.6056916112378875e-13,2.7201866844082988e-14,6.9081407261251115e-12,25.475628391935796,1.9966886527315721,2267.1528727077057

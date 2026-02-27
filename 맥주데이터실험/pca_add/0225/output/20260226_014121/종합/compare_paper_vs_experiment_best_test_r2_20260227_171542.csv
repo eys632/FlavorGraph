@@ -1,0 +1,52 @@
+﻿target_code,aspect_name,paper_best_r2,paper_best_model,exp_best_test_r2,exp_best_arg,exp_source,delta(exp - paper)
+A_esters_flower,Esters aroma - floral,0.03,AdaBoost,0.3082224223064131,44,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.27822242230641314
+F_esters_flower,Esters taste - floral,0.0,AdaBoost,0.0845822530426677,5,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.0845822530426677
+A_malt_burn,Malt aroma - smoked,0.23,AdaBoost,0.2955720977235841,66,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.0655720977235841
+A_hops_citrus,Hops aroma - citrus,0.05,ExtraTrees,0.1087277422311974,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.058727742231197394
+A_malt_all,Malt aroma - overall,0.41,AdaBoost,0.4672326337778534,26,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.057232633777853426
+orange,Orange,0.27,GradientBoost,0.3242421351978315,13,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.0542421351978315
+F_malt_all,Malt taste - overall,0.42,AdaBoost,0.4613709473384653,32,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.0413709473384653
+body,Body,0.55,AdaBoost,0.5792835844689181,25,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.0292835844689181
+F_esters_fruity,Esters taste - fruity,0.18,XGBoost,0.1958267139458912,9,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,0.01582671394589122
+F_esters_isoaa,Esters taste - banana,0.18,AdaBoost,0.1782165329068298,4,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0017834670931702046
+A_hops_noble,Hops aroma - grassy,0.23,RandomForest,0.2273851767542838,45,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0026148232457162135
+aftertaste,Aftertaste,0.52,MLPRegressor,0.5146645814078779,13,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.005335418592122165
+F_hops_citrus,Hops taste - citrus,0.05,GradientBoost,0.0417978924787493,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.008202107521250702
+A_esters_all,Esters aroma - overall,0.16,AdaBoost,0.1501823127102067,111,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.009817687289793292
+clove,Clove,0.23,GradientBoost,0.2198440126457219,16,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.010155987354278112
+F_hops_tropical,Hops taste - tropical fruit,-0.01,MLPRegressor,-0.0226466840513224,1,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.012646684051322401
+F_malt_grain,Malt taste - grain,0.09,RandomForest,0.0740706877504163,1,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.015929312249583702
+A_malt_grain,Malt aroma - grain,0.12,ExtraTrees,0.1001673681623925,32,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0198326318376075
+F_hops_woody,Hops taste - woody,0.16,GradientBoost,0.1367356756781081,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.023264324321891905
+A_esters_fruity,Esters aroma - fruity,0.25,PLS,0.2258065956288356,38,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.024193404371164406
+A_hops_woody,Hops aroma - woody,0.1,GradientBoost,0.0747552856223499,20,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.025244714377650107
+A_hops_tropical,Hops aroma - tropical fruit,-0.02,MLPRegressor,-0.046018541609043,1,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.026018541609043
+F_esters_ethac,Esters taste - nail polish,0.23,XGBoost,0.194934366186992,46,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.03506563381300801
+barnyard,Barnyard,0.04,AdaBoost,-0.0045999116612527,1,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0445999116612527
+F_malt_burn,Malt taste - smoked,0.44,Lasso interactions,0.3950762198016544,125,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.044923780198345586
+sweetness,Sweetness,0.46,AdaBoost,0.4111741831159928,44,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.04882581688400722
+bitternes,Bitterness,0.66,XGBoost,0.6090770897484366,28,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.05092291025156348
+t2n,Trans-2-nonenal,0.03,ExtraTrees,-0.0217338128263442,1,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0517338128263442
+A_esters_ethac,Esters aroma - nail polish,0.09,SupportVectorMachine,0.0319169416726996,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.058083058327300395
+dms,Dimethyl sulfide,0.08,RandomForest,0.0199398247098455,7,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.060060175290154505
+coriander,Coriander,0.26,AdaBoost,0.1984240914347873,10,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.06157590856521272
+F_esters_all,Esters taste - overall,0.35,PLS,0.2880399325118392,46,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0619600674881608
+A_hops_all,Hops aroma - overall,0.31,MLPRegressor,0.235524773586976,7,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.07447522641302401
+diacetyl,Diacetyl,-0.01,MLPRegressor,-0.0857378190630435,1,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0757378190630435
+co2,Carbonation,0.36,ExtraTrees,0.2772920223786492,6,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.08270797762135079
+A_malt_bread,Malt aroma - bread,0.11,AdaBoost,0.0211082395937132,45,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.0888917604062868
+F_hops_all,Hops taste - overall,0.39,GradientBoost,0.2962362654016872,20,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.09376373459831283
+overall,"Overall appreciation_x000D_
+(Trained panel)",0.1,ExtraTrees,-0.0017263899721939,7,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.10172638997219391
+stale_hops,Stale hops,0.11,GradientBoost,0.0018148173977559,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.1081851826022441
+A_malt_cara,Malt aroma - caramel,0.36,ExtraTrees,0.2469535831548349,44,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.11304641684516509
+F_hops_noble,Hops taste - grassy,0.36,XGBoost,0.2310970236773721,43,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.1289029763226279
+lactic,Lactic acid,0.69,GradientBoost,0.5494386853724312,145,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.1405613146275687
+metallic,Metallic,0.17,SupportVectorMachine,0.029109255463314,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.140890744536686
+F_malt_cara,Malt taste - caramel,0.3,RandomForest,0.1220396424438559,25,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.1779603575561441
+F_malt_bread,Malt taste - bread,0.21,AdaBoost,0.0226138780566498,3,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.1873861219433502
+A_esters_isoaa,Esters aroma - banana,0.19,XGBoost,-0.0097069280469552,93,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.1997069280469552
+X4vg,4-vinyl guaiacol,0.32,AdaBoost,0.0543751421317485,8,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.2656248578682515
+alcohol,Alcohol,0.77,RandomForest,0.5002156306785233,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.26978436932147676
+acidity,Acidity,0.75,GradientBoost,0.2087766506285137,8,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.5412233493714863
+acetic,Acetic acid,0.7,XGBoost,0.1373116986802479,2,/home/a202192020/맥주데이터실험/pca_add/0225/output/20260226_014121/종합/cumulative_pcr_all_targets.csv,-0.5626883013197521
